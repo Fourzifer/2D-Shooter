@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3345309280171081420}
   - component: {fileID: 4093745574763928102}
   - component: {fileID: 7632747390730844384}
+  - component: {fileID: -977519143793713681}
   m_Layer: 0
   m_Name: playerBullet
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,3 +132,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.4}
   m_EdgeRadius: 0
+--- !u!114 &-977519143793713681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5123687104342395395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e83edd7a3dbc06946b5ee0531a77594e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEffect: {fileID: 3119312419582851771, guid: 46dc2e5de38a40a4b82e6f17419da216, type: 3}
