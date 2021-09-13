@@ -11,8 +11,9 @@ public class player : MonoBehaviour
     Vector2 moveInput;
     Vector2 mousePos;
 
-    public int currentHealth;
     public int maxHealth = 10;
+    public int currentHealth;
+
     public HealthBar healthBar;
 
     private void Start()
