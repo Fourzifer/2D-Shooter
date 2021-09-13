@@ -6,17 +6,16 @@ public class EnemyShooting : MonoBehaviour
 {
     public Transform shootingBullet;
     public GameObject enemyBullet;
+    private float shootTimer;
+    private float initialShot;
 
     public float bulletForce = 20f;
 
-
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        if (Input.GetButtonDown("Jump")) 
-        {
-            Shoot();
-        }
+        shootTimer = Random.Range(0.2f, 1f);
+        initialShot = Random.Range(0.2f, 1f);
+        InvokeRepeating("Shoot", initialShot, shootTimer);
     }
 
     void Shoot()
