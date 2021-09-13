@@ -25,7 +25,6 @@ public class Enemy : MonoBehaviour
         //enemyHealth = 2;
         rb = this.GetComponent<Rigidbody2D>();
         enemiesLeft = totalEnemies;
-        Debug.Log(enemiesLeft);
     }
 
     // Update is called once per frame
