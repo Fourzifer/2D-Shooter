@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public static int enemiesLeft = 3;
+    public static int enemiesLeft;
     [SerializeField]
     private int enemyHealth;
 
@@ -12,12 +12,20 @@ public class Enemy : MonoBehaviour
     private float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 movement;
+    public static int totalEnemies;
+
+    private void Awake()
+    {
+        totalEnemies++;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         //enemyHealth = 2;
         rb = this.GetComponent<Rigidbody2D>();
+        enemiesLeft = totalEnemies;
+        Debug.Log(enemiesLeft);
     }
 
     // Update is called once per frame
@@ -27,6 +35,7 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
             enemiesLeft--;
+            Debug.Log("Enemies left: " + enemiesLeft);
         }
 
         Vector3 direction = player.position - transform.position;

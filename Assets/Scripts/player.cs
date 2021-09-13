@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class player : MonoBehaviour
     public Camera cam;
     Vector2 moveInput;
     Vector2 mousePos;
-
+    public int playerHealth = 5;
 
     // Update is called once per frame
     void Update()
@@ -21,6 +22,10 @@ public class player : MonoBehaviour
         //MOUSE MOVEMENT
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 
+        if (playerHealth <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     private void FixedUpdate()
@@ -32,6 +37,13 @@ public class player : MonoBehaviour
         Vector2 lookDir = mousePos - rb.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
+    }
 
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "EnemyBullet")
+        {
+            playerHealth--;
+        }
     }
 }
