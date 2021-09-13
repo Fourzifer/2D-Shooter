@@ -10,7 +10,16 @@ public class player : MonoBehaviour
     public Camera cam;
     Vector2 moveInput;
     Vector2 mousePos;
-    public int playerHealth = 5;
+
+    public int currentHealth;
+    public int maxHealth = 10;
+    public HealthBar healthBar;
+
+    private void Start()
+    {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+    }
 
     // Update is called once per frame
     void Update()
@@ -22,7 +31,7 @@ public class player : MonoBehaviour
         //MOUSE MOVEMENT
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 
-        if (playerHealth <= 0)
+        if (currentHealth <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -43,7 +52,8 @@ public class player : MonoBehaviour
     {
         if (other.gameObject.tag == "EnemyBullet")
         {
-            playerHealth--;
+            currentHealth--;
+            healthBar.SetHealth(currentHealth);
         }
     }
 }
