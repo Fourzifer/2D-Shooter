@@ -5,12 +5,13 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public static int enemiesLeft = 3;
+    [SerializeField]
     private int enemyHealth;
 
     // Start is called before the first frame update
     void Start()
     {
-        enemyHealth = 2;
+        //enemyHealth = 2;
     }
 
     // Update is called once per frame
@@ -25,9 +26,9 @@ public class Enemy : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D other)
     {
-        //if (other.gameObject.tag == "Bullet")
-        //{
+        if (other.gameObject.tag == "PlayerBullet")
+        {
             enemyHealth--;
-        //}
+        }
     }
 }
