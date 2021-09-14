@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public static int enemiesLeft;
     [SerializeField]
     private int enemyHealth;
 
     public Transform player;
     private float moveSpeed = 5f;
-    private Rigidbody2D rb;
     private Vector2 movement;
+    private Rigidbody2D rb;
+
+    private Vector3 lastPosition;
+
+    public static int enemiesLeft;
     public static int totalEnemies;
+
+    public GameObject energyPrefab;
 
     private void Awake()
     {
@@ -22,9 +27,9 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //enemyHealth = 2;
         rb = this.GetComponent<Rigidbody2D>();
         enemiesLeft = totalEnemies;
+        Energy.neededEnergy = totalEnemies;
     }
 
     // Update is called once per frame
@@ -32,9 +37,11 @@ public class Enemy : MonoBehaviour
     {
         if (enemyHealth <= 0)
         {
+            lastPosition = transform.position;
             Destroy(gameObject);
             enemiesLeft--;
             Debug.Log("Enemies left: " + enemiesLeft);
+            Instantiate(energyPrefab, lastPosition, Quaternion.identity);
         }
 
         Vector3 direction = player.position - transform.position;

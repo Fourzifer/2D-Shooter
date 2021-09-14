@@ -34,7 +34,11 @@ public class player : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            Enemy.totalEnemies = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Energy.currentEnergy = 0;
+            Debug.Log(Energy.currentEnergy);
+            Debug.Log(Energy.neededEnergy);
         }
     }
 
