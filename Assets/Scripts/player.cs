@@ -53,7 +53,7 @@ public class player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "EnemyBullet")
+        if (other.gameObject.tag == "EnemyBullet" || other.gameObject.tag == "DamageCollider")
         {
             currentHealth--;
             healthBar.SetHealth(currentHealth);
