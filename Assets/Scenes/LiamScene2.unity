@@ -216,6 +216,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1577227762}
+    - target: {fileID: 6671005844579702732, guid: 12b75fa22b7256a45a09a3aec45d317b, type: 3}
+      propertyPath: energyPrefab
+      value: 
+      objectReference: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
     - target: {fileID: 6671005844579702733, guid: 12b75fa22b7256a45a09a3aec45d317b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -449,6 +453,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1577227762}
+    - target: {fileID: 6671005844579702732, guid: 12b75fa22b7256a45a09a3aec45d317b, type: 3}
+      propertyPath: energyPrefab
+      value: 
+      objectReference: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
     - target: {fileID: 6671005844579702733, guid: 12b75fa22b7256a45a09a3aec45d317b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1497,6 +1505,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1577227762}
+    - target: {fileID: 6671005844579702732, guid: 12b75fa22b7256a45a09a3aec45d317b, type: 3}
+      propertyPath: energyPrefab
+      value: 
+      objectReference: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
     - target: {fileID: 6671005844579702733, guid: 12b75fa22b7256a45a09a3aec45d317b, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -17,13 +17,7 @@ public class SceneTransition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetButtonDown("Jump"))
-        //{
-        //    Enemy.enemiesLeft--;
-        //    Debug.Log(Enemy.enemiesLeft);
-        //}
-
-        if (Enemy.enemiesLeft <= 0)
+        if (Energy.currentEnergy == Energy.neededEnergy)
         {
             m_SpriteRenderer.color = Color.blue;
         }
@@ -31,9 +25,10 @@ public class SceneTransition : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && Enemy.enemiesLeft <= 0)
+        if (other.CompareTag("Player") && Energy.currentEnergy == Energy.neededEnergy)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Energy.currentEnergy = 0;
             Debug.Log("Teleported");
         }
     }
