@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
 
-    SpriteRenderer m_SpriteRenderer;
+    public SpriteRenderer m_SpriteRenderer;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,7 @@ public class SceneTransition : MonoBehaviour
 
         if (Enemy.enemiesLeft <= 0)
         {
-            m_SpriteRenderer.color = Color.blue;
+            m_SpriteRenderer.color = Color.white;
         }
     }
 
