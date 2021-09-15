@@ -16,11 +16,33 @@ public class player : MonoBehaviour
 
     public HealthBar healthBar;
 
+    private int currentScene;
+
     private void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+
+        currentScene = SceneManager.GetActiveScene().buildIndex;
+
+
+        //switch (currentScene)
+        //{
+        //    case 0:
+        //        Debug.Log("Level 1");
+        //        break;
+        //    case 1:
+        //        Debug.Log("Level 2");
+        //        break;
+        //    default:
+        //        Debug.Log("Neither");
+        //        break;
+
+        //}
     }
+
+ 
+
 
     // Update is called once per frame
     void Update()
