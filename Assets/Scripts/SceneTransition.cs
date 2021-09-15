@@ -7,6 +7,7 @@ public class SceneTransition : MonoBehaviour
 {
 
     public SpriteRenderer m_SpriteRenderer;
+    public Sprite newSprite
 
 
     // Start is called before the first frame update
@@ -18,6 +19,9 @@ public class SceneTransition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Whirly effect
+        transform.Rotate(0, 0, 30 * Time.deltaTime);
+
         //if (Energy.currentEnergy == 3)
         if (Energy.currentEnergy == Energy.neededEnergy)
         {
