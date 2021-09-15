@@ -12,6 +12,7 @@ public class Energy : MonoBehaviour
     private void Start()
     {
         energyBar = GameObject.Find("EnergyBar").GetComponent<EnergyBar>();
+        //setMaxEnergy as a set number
         energyBar.SetMaxEnergy(neededEnergy);
         energyBar.SetEnergy(currentEnergy);
     }

@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 6512685638742628365}
   - component: {fileID: 6512685638742628362}
   - component: {fileID: 6512685638742628363}
-  - component: {fileID: 6512685638742628364}
   - component: {fileID: 6770816156174157742}
   - component: {fileID: 6770816156174157743}
+  - component: {fileID: -4240601481852624071}
   m_Layer: 8
-  m_Name: EnemyShip
+  m_Name: EnemyShipInstantiate
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113,21 +113,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6512685638742628364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6512685638742628360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2560df66453fcb2499610964804b28fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHealth: 8
-  player: {fileID: 0}
-  energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
 --- !u!50 &6770816156174157742
 Rigidbody2D:
   serializedVersion: 4
@@ -164,6 +149,20 @@ MonoBehaviour:
   shootingBullet: {fileID: 6770816156173032923}
   enemyBullet: {fileID: 5123687104342395395, guid: 1dc0c3926a72d7f4087288b1084e06d3, type: 3}
   bulletForce: 20
+--- !u!114 &-4240601481852624071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6512685638742628360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288a8031b4f22cd438466e6f852e87fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 5
+  energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
 --- !u!1 &6770816156173032922
 GameObject:
   m_ObjectHideFlags: 0
