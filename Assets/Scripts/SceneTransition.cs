@@ -18,6 +18,7 @@ public class SceneTransition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if (Energy.currentEnergy == 3)
         if (Energy.currentEnergy == Energy.neededEnergy)
         {
             m_SpriteRenderer.color = Color.white;
@@ -26,7 +27,8 @@ public class SceneTransition : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && Energy.currentEnergy == Energy.neededEnergy)
+        //if (other.CompareTag("Player") && Energy.currentEnergy >= 3)
+        if (other.CompareTag("Player") && Energy.currentEnergy >= Energy.neededEnergy)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             Energy.currentEnergy = 0;
