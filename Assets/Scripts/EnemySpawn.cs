@@ -22,7 +22,9 @@ public class EnemySpawn : MonoBehaviour
         bool enemySpawned = false;
         while (!enemySpawned)
         {
+            //-28, 28
             enemyXPos = Random.Range(-10, 10);
+            //-26, 28
             enemyYPos = Random.Range(-10, 10);
 
             Vector3 enemyPosition = new Vector3(enemyXPos, enemyYPos, 0f);

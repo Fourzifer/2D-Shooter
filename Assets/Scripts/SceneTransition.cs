@@ -19,9 +19,9 @@ public class SceneTransition : MonoBehaviour
     void Update()
     {
         //if (Energy.currentEnergy == 3)
-        if (Energy.currentEnergy == Energy.neededEnergy)
+        if (Energy.currentEnergy >= Energy.neededEnergy)
         {
-            m_SpriteRenderer.color = Color.white;
+            m_SpriteRenderer.color = Color.blue;
         }
     }
 
