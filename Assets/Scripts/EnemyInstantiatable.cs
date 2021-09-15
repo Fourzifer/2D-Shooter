@@ -40,8 +40,8 @@ public class EnemyInstantiatable : MonoBehaviour
         {
             lastPosition = transform.position;
             Destroy(gameObject);
-            enemiesLeft--;
-            Debug.Log("Enemies left: " + enemiesLeft);
+            //enemiesLeft--;
+            //Debug.Log("Enemies left: " + enemiesLeft);
             Instantiate(energyPrefab, lastPosition, Quaternion.identity);
         }
 

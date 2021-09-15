@@ -13,7 +13,7 @@ public class EnemySpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enemySpawnTimer = Random.Range(5, 10);
+        enemySpawnTimer = Random.Range(3, 5);
         InvokeRepeating("SpawnEnemy", 4.0f, enemySpawnTimer);
     }
 
