@@ -8,12 +8,15 @@ public class SceneTransition : MonoBehaviour
 
     public SpriteRenderer m_SpriteRenderer;
     public Sprite newSprite;
+    public GameObject message;
+    public GameObject cloneMessage;
 
 
     // Start is called before the first frame update
     void Start()
     {
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
+        message = cloneMessage;
     }
 
     // Update is called once per frame
@@ -38,6 +41,17 @@ public class SceneTransition : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             Energy.currentEnergy = 0;
             Debug.Log("Teleported");
+        }
+        else
+        {
+            cloneMessage = (GameObject)Instantiate(message);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Destroy(cloneMessage);
         }
     }
 }
