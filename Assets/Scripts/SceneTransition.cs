@@ -7,6 +7,8 @@ public class SceneTransition : MonoBehaviour
 {
     public SpriteRenderer m_SpriteRenderer;
     public Sprite newSprite;
+    public GameObject message;
+    public GameObject cloneMessage;
 
     private int currentScene;
 
@@ -66,6 +68,17 @@ public class SceneTransition : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             Energy.currentEnergy = 0;
             Debug.Log("Teleported");
+        }
+        else
+        {
+            cloneMessage = (GameObject)Instantiate(message);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Destroy(cloneMessage);
         }
     }
 }
