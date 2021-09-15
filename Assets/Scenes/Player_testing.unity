@@ -470,6 +470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawnManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2983691857967516129, guid: 1aed68cc120ba544bb0f53c2d6bb3526, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2983691857967516135, guid: 1aed68cc120ba544bb0f53c2d6bb3526, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1075,8 +1079,8 @@ Canvas:
   m_GameObject: {fileID: 1873112032}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1119194337}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1128,23 +1132,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142895884279343422, guid: d41cc2eb6f7c89e45b4f03740b9a7687, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9142895884279343422, guid: d41cc2eb6f7c89e45b4f03740b9a7687, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9142895884279343422, guid: d41cc2eb6f7c89e45b4f03740b9a7687, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9142895884279343422, guid: d41cc2eb6f7c89e45b4f03740b9a7687, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9142895884279343422, guid: d41cc2eb6f7c89e45b4f03740b9a7687, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200.3784
+      value: 200.37842
       objectReference: {fileID: 0}
     - target: {fileID: 9142895884279343422, guid: d41cc2eb6f7c89e45b4f03740b9a7687, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1180,11 +1184,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142895884279343422, guid: d41cc2eb6f7c89e45b4f03740b9a7687, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -473
+      value: 120.09424
       objectReference: {fileID: 0}
     - target: {fileID: 9142895884279343422, guid: d41cc2eb6f7c89e45b4f03740b9a7687, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -260
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 9142895884279343422, guid: d41cc2eb6f7c89e45b4f03740b9a7687, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1219,6 +1223,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 968147289799000832, guid: 56b525f64a693204e96908c66ba579b4, type: 3}
+      propertyPath: message
+      value: 
+      objectReference: {fileID: 4028664896266870083, guid: 8ffe2516b96906d4aa3ba1ee7ffa56bf, type: 3}
+    - target: {fileID: 968147289799000832, guid: 56b525f64a693204e96908c66ba579b4, type: 3}
+      propertyPath: cloneMessage
+      value: 
+      objectReference: {fileID: 4028664896266870083, guid: 8ffe2516b96906d4aa3ba1ee7ffa56bf, type: 3}
     - target: {fileID: 968147289799000833, guid: 56b525f64a693204e96908c66ba579b4, type: 3}
       propertyPath: m_Name
       value: Portal
