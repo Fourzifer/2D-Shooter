@@ -29,7 +29,7 @@ public class EnemyInstantiatable : MonoBehaviour
     {
         rb = this.GetComponent<Rigidbody2D>();
         enemiesLeft = totalEnemies;
-        Energy.neededEnergy = totalEnemies;
+        //Energy.neededEnergy = totalEnemies;
         player = GameObject.Find("PlayerShip").transform;
     }
 

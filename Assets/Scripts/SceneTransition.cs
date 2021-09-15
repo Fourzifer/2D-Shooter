@@ -23,9 +23,9 @@ public class SceneTransition : MonoBehaviour
         transform.Rotate(0, 0, 30 * Time.deltaTime);
 
         //if (Energy.currentEnergy == 3)
-        if (Energy.currentEnergy == Energy.neededEnergy)
+        if (Energy.currentEnergy >= Energy.neededEnergy)
         {
-            m_SpriteRenderer.color = Color.white;
+            m_SpriteRenderer.color = Color.blue;
         }
     }
 
