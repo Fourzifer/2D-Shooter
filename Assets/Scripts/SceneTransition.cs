@@ -7,7 +7,7 @@ public class SceneTransition : MonoBehaviour
 {
 
     public SpriteRenderer m_SpriteRenderer;
-    public Sprite newSprite
+    public Sprite newSprite;
 
 
     // Start is called before the first frame update
@@ -25,7 +25,8 @@ public class SceneTransition : MonoBehaviour
         //if (Energy.currentEnergy == 3)
         if (Energy.currentEnergy >= Energy.neededEnergy)
         {
-            m_SpriteRenderer.color = Color.blue;
+            m_SpriteRenderer.color = Color.white;
+            m_SpriteRenderer.sprite = newSprite;
         }
     }
 
