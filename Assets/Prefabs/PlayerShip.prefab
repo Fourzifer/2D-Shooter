@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 7847595520740231089}
   - component: {fileID: 7847595520740231088}
   - component: {fileID: 7847595520740231093}
+  - component: {fileID: 642843369702465187}
   m_Layer: 3
   m_Name: PlayerShip
   m_TagString: Player
@@ -184,6 +185,9 @@ MonoBehaviour:
   rb: {fileID: 7847595520740231094}
   moveSpeed: 5
   cam: {fileID: 0}
+  maxHealth: 10
+  currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!114 &7847595520740231088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,3 +218,22 @@ MonoBehaviour:
   shootingBullet: {fileID: 7847595520443595762}
   playerBullet: {fileID: 5123687104342395395, guid: 4d5b3a9da9400574893b3031b5e3add5, type: 3}
   bulletForce: 20
+--- !u!95 &642843369702465187
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7847595520740231091}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 50fef499335bd5841a05bd75020a5bbb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
