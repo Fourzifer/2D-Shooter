@@ -5,7 +5,7 @@ using UnityEngine;
 public class Energy : MonoBehaviour
 {
     public static int currentEnergy;
-    public static int neededEnergy = 3;
+    public static int neededEnergy;
 
     private EnergyBar energyBar;
 
