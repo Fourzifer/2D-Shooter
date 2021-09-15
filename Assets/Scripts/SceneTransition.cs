@@ -69,7 +69,7 @@ public class SceneTransition : MonoBehaviour
             Energy.currentEnergy = 0;
             Debug.Log("Teleported");
         }
-        else
+        else if (other.CompareTag("Player"))
         {
             cloneMessage = (GameObject)Instantiate(message);
         }
