@@ -13,7 +13,7 @@ public class EnemySpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enemySpawnTimer = Random.Range(3, 5);
+        enemySpawnTimer = Random.Range(3, 4);
         InvokeRepeating("SpawnEnemy", 4.0f, enemySpawnTimer);
     }
 
@@ -23,9 +23,9 @@ public class EnemySpawn : MonoBehaviour
         while (!enemySpawned)
         {
             //-28, 28
-            enemyXPos = Random.Range(-10, 10);
+            enemyXPos = Random.Range(-25, 25);
             //-26, 28
-            enemyYPos = Random.Range(-10, 10);
+            enemyYPos = Random.Range(-25, 25);
 
             Vector3 enemyPosition = new Vector3(enemyXPos, enemyYPos, 0f);
 

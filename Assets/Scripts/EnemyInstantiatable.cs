@@ -7,9 +7,9 @@ public class EnemyInstantiatable : MonoBehaviour
     [SerializeField]
     private int enemyHealth;
 
-    public Transform player;
+    public static Transform player;
     private float moveSpeed = 5f;
-    private Vector2 movement;
+    public static Vector2 movement;
     private Rigidbody2D rb;
 
     private Vector3 lastPosition;
@@ -19,6 +19,8 @@ public class EnemyInstantiatable : MonoBehaviour
 
     public GameObject energyPrefab;
 
+    private EnemyShooting enemyShooting;
+
     private void Awake()
     {
         totalEnemies++;
@@ -27,10 +29,12 @@ public class EnemyInstantiatable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        enemyShooting = GetComponent<EnemyShooting>();
         rb = this.GetComponent<Rigidbody2D>();
         enemiesLeft = totalEnemies;
         //Energy.neededEnergy = totalEnemies;
         player = GameObject.Find("PlayerShip").transform;
+        //Invoke("StartShooting", 0f);
     }
 
     // Update is called once per frame
@@ -50,7 +54,24 @@ public class EnemyInstantiatable : MonoBehaviour
         rb.rotation = angle;
         direction.Normalize();
         movement = direction;
+        //Debug.Log(Vector2.Distance(movement, player.position));
     }
+
+    //void StartShooting()
+    //{
+    //    if (Mathf.Abs(movement.x - transform.position.x) < 10)
+    //    {
+    //        Debug.Log("Did the thing");
+
+    //        enemyShooting.InvokeRepeating("Shoot", 0, 0.2f);
+    //    }
+
+    //    else
+    //    {
+    //        Debug.Log("Not in range");
+    //        return;
+    //    }
+    //}
 
     private void FixedUpdate()
     {
