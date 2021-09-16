@@ -8,6 +8,7 @@ TagManager:
   - PlayerBullet
   - EnemyBullet
   - DamageCollider
+  - HealthPickup
   layers:
   - Default
   - TransparentFX
