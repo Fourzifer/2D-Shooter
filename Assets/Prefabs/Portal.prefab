@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7855e29fb6c6bcd418c859b5963b0348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SpriteRenderer: {fileID: 0}
+  m_SpriteRenderer: {fileID: 968147289799000838}
   newSprite: {fileID: 21300000, guid: 23f19061ce5323441b9aaad9e3649a27, type: 3}
-  message: {fileID: 5863719192862745211, guid: 979fe23356a3fa347ade838c92801c84, type: 3}
-  messageParent: {fileID: 968147289799000833}
+  message: {fileID: 4028664896266870083, guid: 8ffe2516b96906d4aa3ba1ee7ffa56bf, type: 3}
+  cloneMessage: {fileID: 4028664896266870083, guid: 8ffe2516b96906d4aa3ba1ee7ffa56bf, type: 3}
