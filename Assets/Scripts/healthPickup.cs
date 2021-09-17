@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class healthPickup : MonoBehaviour
 {
-
+    public HealthBar healthBar;
+    public GameObject health;
 
     public void Update()
     {
@@ -15,10 +16,9 @@ public class healthPickup : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            player.currentHealth++;
-            player.currentHealth=player.maxHealth;
-            
-            Debug.Log("Health picked up");
+            player.currentHealth = player.currentHealth +5;
+            healthBar.SetHealth(player.currentHealth);
+            Destroy(health);
         }
     }
 }
