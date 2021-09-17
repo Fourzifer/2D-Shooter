@@ -9,11 +9,13 @@ public class Projectile : MonoBehaviour
     private Transform player;
     private Vector2 target;
     public int enemyType;
+
+    private int destroyDelay = 3;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
         target = new Vector2(player.position.x, player.position.y);
     }
 
@@ -27,6 +29,7 @@ public class Projectile : MonoBehaviour
                 break;
             case 1:
                 transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+                Destroy(gameObject, destroyDelay);
                 break;
             default:
                 transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
