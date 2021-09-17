@@ -73,6 +73,7 @@ public class RocketEnemy : MonoBehaviour
         if (other.gameObject.tag == "PlayerBullet")
         {
             enemyHealth--;
+            //SpriteFlash.Flash();
         }
     }
 }
