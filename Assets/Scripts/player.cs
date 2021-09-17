@@ -11,8 +11,8 @@ public class player : MonoBehaviour
     Vector2 moveInput;
     Vector2 mousePos;
 
-    public int maxHealth = 10;
-    public int currentHealth;
+    public static int maxHealth = 10;
+    public static int currentHealth;
 
     public HealthBar healthBar;
 
@@ -79,6 +79,6 @@ public class player : MonoBehaviour
         {
             currentHealth--;
             healthBar.SetHealth(currentHealth);
-        }
+        }       
     }
 }
