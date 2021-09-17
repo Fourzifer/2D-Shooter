@@ -210,6 +210,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 582948044}
+    - target: {fileID: 3623949518989928339, guid: c7d84cd3c68faec4c9c6e64c814ff85b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3623949518989928342, guid: c7d84cd3c68faec4c9c6e64c814ff85b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -254,7 +258,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3623949518989928339, guid: c7d84cd3c68faec4c9c6e64c814ff85b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c7d84cd3c68faec4c9c6e64c814ff85b, type: 3}
 --- !u!1001 &277368274
 PrefabInstance:
@@ -1392,6 +1397,10 @@ PrefabInstance:
     - target: {fileID: 886111511868380316, guid: 8e408e51fc3eac54d830f38ea2309e6a, type: 3}
       propertyPath: m_Name
       value: HealthSpawnManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 886111511868380316, guid: 8e408e51fc3eac54d830f38ea2309e6a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e408e51fc3eac54d830f38ea2309e6a, type: 3}
