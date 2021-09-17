@@ -18,31 +18,15 @@ public class player : MonoBehaviour
 
     private int currentScene;
 
+    //public SpriteFlash spriteFlash;
+
     private void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
 
         currentScene = SceneManager.GetActiveScene().buildIndex;
-
-
-        //switch (currentScene)
-        //{
-        //    case 0:
-        //        Debug.Log("Level 1");
-        //        break;
-        //    case 1:
-        //        Debug.Log("Level 2");
-        //        break;
-        //    default:
-        //        Debug.Log("Neither");
-        //        break;
-
-        //}
     }
-
- 
-
 
     // Update is called once per frame
     void Update()
@@ -79,6 +63,23 @@ public class player : MonoBehaviour
         {
             currentHealth--;
             healthBar.SetHealth(currentHealth);
+            //spriteFlash.Flash();
+            //SpriteFlash.GetComponent<SpriteFlash>.Flash();
         }       
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "HealthPickup" && currentHealth != maxHealth)
+        {
+            currentHealth++;
+            healthBar.SetHealth(currentHealth);
+            Destroy(other.gameObject);
+
+            if (currentHealth > maxHealth)
+            {
+                currentHealth = maxHealth;
+            }
+        }
     }
 }

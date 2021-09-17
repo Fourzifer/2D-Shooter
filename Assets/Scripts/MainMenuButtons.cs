@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuButtons : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void LoadGame()
+    public void NewGame()
     {
         SceneManager.LoadScene("LevelOne");
     }
