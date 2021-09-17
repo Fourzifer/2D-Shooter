@@ -6,18 +6,26 @@ public class SpriteFlash : MonoBehaviour
 {
     SpriteRenderer sprite;
 
-    // Start is called before the first frame update
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-        sprite.color = new Color(1, 0.5f, 0, 0.5f);
-        Debug.Log("Sprite Flashed");
     }
 
-    public static void Flash()
+    public void Flash()
     {
-        //sprite.color = new Color(1, 0, 0, 1);
-        Debug.Log("Sprite Flashed");
+        StartCoroutine(FlashForSeconds());
     }
 
+    IEnumerator FlashForSeconds()
+    {
+        sprite.color = new Color(1, 0.5f, 0, 0f);
+        Debug.Log("Sprite Flashed");
+
+        yield return new WaitForSeconds(0.1f);
+
+        //sr.color = new Color(1, 0.5f, 0, 1f);
+
+        //sprite.color = sprite;
+
+    }
 }
