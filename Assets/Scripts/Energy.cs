@@ -9,12 +9,14 @@ public class Energy : MonoBehaviour
 
     private EnergyBar energyBar;
 
+    private int destroyDelay = 5;
+
     private void Start()
     {
         energyBar = GameObject.Find("EnergyBar").GetComponent<EnergyBar>();
-        //setMaxEnergy as a set number
         energyBar.SetMaxEnergy(neededEnergy);
         energyBar.SetEnergy(currentEnergy);
+        Destroy(gameObject, destroyDelay);
     }
 
     void OnTriggerEnter2D(Collider2D other)
