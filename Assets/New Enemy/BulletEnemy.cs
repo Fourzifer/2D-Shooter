@@ -29,6 +29,9 @@ public class BulletEnemy : MonoBehaviour
     public Transform shootingBullet;
     public float bulletForce = 20f;
 
+    public SpriteFlash spriteFlash;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -90,6 +93,7 @@ public class BulletEnemy : MonoBehaviour
         if (other.gameObject.tag == "PlayerBullet")
         {
             enemyHealth--;
+            spriteFlash.Flash();
         }
     }
 }

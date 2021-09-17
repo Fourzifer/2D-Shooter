@@ -186,9 +186,8 @@ MonoBehaviour:
   rb: {fileID: 7847595520740231094}
   moveSpeed: 5
   cam: {fileID: 0}
-  maxHealth: 10
-  currentHealth: 0
   healthBar: {fileID: 0}
+  spriteFlash: {fileID: 0}
 --- !u!114 &7847595520740231088
 MonoBehaviour:
   m_ObjectHideFlags: 0
