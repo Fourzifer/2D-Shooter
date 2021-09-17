@@ -15,9 +15,8 @@ public class RocketEnemy : MonoBehaviour
 
     private Vector3 lastPosition;
 
-    public float speed;
-    public float stoppingDistance;
-    public float retreatDistance;
+    public float bulletForce = 20f;
+
     public float shootingDistance;
 
     private float timeBtwShots;
@@ -25,6 +24,8 @@ public class RocketEnemy : MonoBehaviour
 
     public GameObject projectile;
     private Transform player;
+
+    public Transform shootingBullet;
 
     // Start is called before the first frame update
     void Start()
@@ -38,10 +39,20 @@ public class RocketEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 direction = player.position - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        rb.rotation = angle;
+
         //Shoot if close to player
         if (timeBtwShots <= 0 && Vector2.Distance(transform.position, player.position) <= shootingDistance)
         {
-            Instantiate(projectile, transform.position, Quaternion.identity);
+            //Old rotation
+            //Instantiate(projectile, transform.position, transform.rotation);
+            //New rotation
+            GameObject bullet = Instantiate(projectile, shootingBullet.position, shootingBullet.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(shootingBullet.up * bulletForce, ForceMode2D.Impulse);
+
             timeBtwShots = startTimeBtwShots;
         }
         else
@@ -55,10 +66,6 @@ public class RocketEnemy : MonoBehaviour
             Destroy(gameObject);
             Instantiate(energyPrefab, lastPosition, Quaternion.identity);
         }
-
-        Vector3 direction = player.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        rb.rotation = angle;
     }
 
     void OnCollisionEnter2D(Collision2D other)
