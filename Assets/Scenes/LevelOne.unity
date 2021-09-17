@@ -451,6 +451,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3459012612710188003, guid: ef9dbf14cd14b1442800a16bd2776ced, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3459012612710188012, guid: ef9dbf14cd14b1442800a16bd2776ced, type: 3}
       propertyPath: m_Pivot.x
       value: 0
