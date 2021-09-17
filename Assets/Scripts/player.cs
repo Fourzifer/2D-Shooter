@@ -81,4 +81,19 @@ public class player : MonoBehaviour
             healthBar.SetHealth(currentHealth);
         }       
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "HealthPickup" && currentHealth != maxHealth)
+        {
+            currentHealth++;
+            healthBar.SetHealth(currentHealth);
+            Destroy(other.gameObject);
+
+            if (currentHealth > maxHealth)
+            {
+                currentHealth = maxHealth;
+            }
+        }
+    }
 }
