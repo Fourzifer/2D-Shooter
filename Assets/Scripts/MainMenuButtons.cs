@@ -18,7 +18,11 @@ public class MainMenuButtons : MonoBehaviour
     }
 
     public void Continue()
-    { 
-        
+    {
+        if (PlayerPrefs.HasKey("LastCheckpointX") && PlayerPrefs.HasKey("LastCheckpointY"))
+        {
+            float xPos = PlayerPrefs.GetFloat("LastCheckpointX");
+            float yPos = PlayerPrefs.GetFloat("LastCheckpointY");
+        }
     }
 }
