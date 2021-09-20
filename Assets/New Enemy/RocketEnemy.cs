@@ -39,6 +39,9 @@ public class RocketEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (player == null)
+            return;
+
         Vector3 direction = player.position - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         rb.rotation = angle;
