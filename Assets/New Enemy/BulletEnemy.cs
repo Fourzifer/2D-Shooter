@@ -93,7 +93,7 @@ public class BulletEnemy : MonoBehaviour
         if (other.gameObject.tag == "PlayerBullet")
         {
             enemyHealth--;
-            spriteFlash.Flash();
+            //spriteFlash.Flash();
         }
     }
 }
