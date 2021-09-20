@@ -9,6 +9,8 @@ TagManager:
   - EnemyBullet
   - DamageCollider
   - HealthPickup
+  - BulletSpawn
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

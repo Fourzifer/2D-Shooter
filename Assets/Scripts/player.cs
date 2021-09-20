@@ -16,6 +16,9 @@ public class player : MonoBehaviour
 
     public HealthBar healthBar;
 
+    public InGameMenu Menu;
+    public InGameMenu CloneMenu;
+
     private int currentScene;
 
     //public SpriteFlash spriteFlash;
@@ -38,12 +41,19 @@ public class player : MonoBehaviour
         //MOUSE MOVEMENT
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 
+        //Player death
         if (currentHealth <= 0)
         {
             Enemy.totalEnemies = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Energy.currentEnergy = 0;
         }
+
+        if (Input.GetButtonDown("Cancel"))
+        {
+            CloneMenu = Instantiate(Menu);
+        }
+
     }
 
     private void FixedUpdate()
