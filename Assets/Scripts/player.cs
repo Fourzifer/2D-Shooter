@@ -15,11 +15,16 @@ public class player : MonoBehaviour
     public static int currentHealth;
 
     public HealthBar healthBar;
+    public GameObject deathEffect;
 
     public InGameMenu Menu;
     public InGameMenu CloneMenu;
 
     private int currentScene;
+    public GameObject playerShip;
+
+    public GameObject gameManager;
+
 
     //public SpriteFlash spriteFlash;
 
@@ -44,8 +49,9 @@ public class player : MonoBehaviour
         //Player death
         if (currentHealth <= 0)
         {
+            gameManager.GetComponent<GameManager>().PlayerDeath();
             Enemy.totalEnemies = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
             Energy.currentEnergy = 0;
         }
 
@@ -53,7 +59,6 @@ public class player : MonoBehaviour
         {
             CloneMenu = Instantiate(Menu);
         }
-
     }
 
     private void FixedUpdate()

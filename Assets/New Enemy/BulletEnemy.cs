@@ -12,6 +12,7 @@ public class BulletEnemy : MonoBehaviour
     public static int totalEnemies;
 
     public GameObject energyPrefab;
+    public GameObject deathEffect;
 
     private Vector3 lastPosition;
 
@@ -29,8 +30,7 @@ public class BulletEnemy : MonoBehaviour
     public Transform shootingBullet;
     public float bulletForce = 20f;
 
-    public SpriteFlash spriteFlash;
-
+    //public SpriteFlash spriteFlash;
 
     // Start is called before the first frame update
     void Start()
@@ -85,6 +85,7 @@ public class BulletEnemy : MonoBehaviour
             lastPosition = transform.position;
             Destroy(gameObject);
             Instantiate(energyPrefab, lastPosition, Quaternion.identity);
+            Instantiate(deathEffect, lastPosition, Quaternion.identity);
         }
     }
 
