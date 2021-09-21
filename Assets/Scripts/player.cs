@@ -78,6 +78,7 @@ public class player : MonoBehaviour
         {
             currentHealth--;
             healthBar.SetHealth(currentHealth);
+            CinemachineShake.Instance.ShakeCamera(5f, .1f);
             //spriteFlash.Flash();
             //SpriteFlash.GetComponent<SpriteFlash>.Flash();
         }       
