@@ -12,6 +12,7 @@ public class BulletEnemy : MonoBehaviour
     public static int totalEnemies;
 
     public GameObject energyPrefab;
+    public GameObject deathEffect;
 
     private Vector3 lastPosition;
 
@@ -29,8 +30,7 @@ public class BulletEnemy : MonoBehaviour
     public Transform shootingBullet;
     public float bulletForce = 20f;
 
-    public SpriteFlash spriteFlash;
-
+    //public SpriteFlash spriteFlash;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +44,9 @@ public class BulletEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (player == null)
+            return;
+
         Vector3 direction = player.position - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         rb.rotation = angle;
@@ -85,6 +88,7 @@ public class BulletEnemy : MonoBehaviour
             lastPosition = transform.position;
             Destroy(gameObject);
             Instantiate(energyPrefab, lastPosition, Quaternion.identity);
+            Instantiate(deathEffect, lastPosition, Quaternion.identity);
         }
     }
 
@@ -93,7 +97,7 @@ public class BulletEnemy : MonoBehaviour
         if (other.gameObject.tag == "PlayerBullet")
         {
             enemyHealth--;
-            spriteFlash.Flash();
+            //spriteFlash.Flash();
         }
     }
 }
