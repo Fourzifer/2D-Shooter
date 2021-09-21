@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class player : MonoBehaviour
 {
@@ -14,8 +15,10 @@ public class player : MonoBehaviour
     public static int maxHealth = 10;
     public static int currentHealth;
 
+
     public HealthBar healthBar;
     public GameObject deathEffect;
+    public GameObject lifeBar;
 
     public InGameMenu Menu;
     public InGameMenu CloneMenu;
@@ -24,6 +27,7 @@ public class player : MonoBehaviour
     public GameObject playerShip;
 
     public GameObject gameManager;
+    public GameObject lifeManager;
 
 
     //public SpriteFlash spriteFlash;
@@ -53,6 +57,8 @@ public class player : MonoBehaviour
             Enemy.totalEnemies = 0;
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Energy.currentEnergy = 0;
+            lifeManager.GetComponent<Lives>().LoseLife();
+
         }
 
         if (Input.GetButtonDown("Cancel"))
