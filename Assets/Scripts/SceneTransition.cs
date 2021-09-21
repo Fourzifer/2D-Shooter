@@ -23,7 +23,7 @@ public class SceneTransition : MonoBehaviour
         {
             case 0:
                 Debug.Log("Level 1");
-                Energy.neededEnergy = 10;
+                Energy.neededEnergy = 0;
                 Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 break;
             case 1:
@@ -32,13 +32,24 @@ public class SceneTransition : MonoBehaviour
                 Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 break;
             case 2:
+                Energy.neededEnergy = 15;
+                Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 Debug.Log("Level 3");
+
                 break;
             case 3:
+                Energy.neededEnergy = 20;
+                Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 Debug.Log("Level 4");
                 break;
             case 4:
+                Energy.neededEnergy = 25;
+                Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 Debug.Log("Level 5");
+                break;
+            case 5:
+                Energy.neededEnergy = 30;
+                Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 break;
             default:
                 print("Level has no max energy");
@@ -55,7 +66,6 @@ public class SceneTransition : MonoBehaviour
         //if (Energy.currentEnergy == 3)
         if (Energy.currentEnergy >= Energy.neededEnergy)
         {
-            m_SpriteRenderer.color = Color.white;
             m_SpriteRenderer.sprite = newSprite;
         }
     }
