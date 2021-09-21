@@ -816,6 +816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   playerShip: {fileID: 142911792}
+  lifeManager: {fileID: 0}
 --- !u!4 &1038423581
 Transform:
   m_ObjectHideFlags: 0
@@ -1738,6 +1739,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
       propertyPath: sounds.Array.data[9].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.data[2].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.data[3].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.data[4].volume
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1336550789003482917, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}

@@ -85,6 +85,7 @@ public class BulletEnemy : MonoBehaviour
 
         if (enemyHealth <= 0)
         {
+            FindObjectOfType<AudioManager>().Play("Death2");
             lastPosition = transform.position;
             Destroy(gameObject);
             Instantiate(energyPrefab, lastPosition, Quaternion.identity);
@@ -96,6 +97,7 @@ public class BulletEnemy : MonoBehaviour
     {
         if (other.gameObject.tag == "PlayerBullet")
         {
+            FindObjectOfType<AudioManager>().Play("Hit2");
             enemyHealth--;
             //spriteFlash.Flash();
         }

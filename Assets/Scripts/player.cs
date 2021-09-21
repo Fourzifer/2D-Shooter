@@ -53,6 +53,7 @@ public class player : MonoBehaviour
         //Player death
         if (currentHealth <= 0)
         {
+            FindObjectOfType<AudioManager>().Play("Death");
             gameManager.GetComponent<GameManager>().PlayerDeath();
             Enemy.totalEnemies = 0;
             Instantiate(deathEffect, transform.position, Quaternion.identity);
@@ -84,6 +85,8 @@ public class player : MonoBehaviour
         {
             currentHealth--;
             healthBar.SetHealth(currentHealth);
+            FindObjectOfType<AudioManager>().Play("Hit");
+
             CinemachineShake.Instance.ShakeCamera(5f, .1f);
             //spriteFlash.Flash();
             //SpriteFlash.GetComponent<SpriteFlash>.Flash();
@@ -96,6 +99,7 @@ public class player : MonoBehaviour
         {
             currentHealth++;
             healthBar.SetHealth(currentHealth);
+            FindObjectOfType<AudioManager>().Play("Pickup3");
             Destroy(other.gameObject);
 
             if (currentHealth > maxHealth)
