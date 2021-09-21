@@ -126,8 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8814f31c7bbce4f47a606d88ff694a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
-  HideDistance: 15
+  hideDistance: 0
 --- !u!1 &7847595519911626705
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,6 +204,7 @@ GameObject:
   - component: {fileID: 642843369702465187}
   - component: {fileID: 1577227756}
   - component: {fileID: 1321361517608970285}
+  - component: {fileID: -1732148982790399273}
   m_Layer: 3
   m_Name: PlayerShip
   m_TagString: Player
@@ -317,8 +317,11 @@ MonoBehaviour:
   moveSpeed: 5
   cam: {fileID: 0}
   healthBar: {fileID: 0}
+  deathEffect: {fileID: 0}
   Menu: {fileID: 0}
   CloneMenu: {fileID: 0}
+  playerShip: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!114 &7847595520740231088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,3 +403,20 @@ CircleCollider2D:
   m_Offset: {x: 0.021467447, y: 0}
   serializedVersion: 2
   m_Radius: 0.3860566
+--- !u!114 &-1732148982790399273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7847595520740231091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 592eda5efc85ade42a77f6c2df8b969f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  lifeAmount: 3
+  hearts: []
+  fullHeart: {fileID: 5750537653290509623, guid: c32ca2141ec245f43a2d9465c89a09dc, type: 3}
+  emptyHeart: {fileID: 7592328607100769036, guid: c32ca2141ec245f43a2d9465c89a09dc, type: 3}
