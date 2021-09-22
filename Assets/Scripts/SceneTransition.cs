@@ -12,6 +12,8 @@ public class SceneTransition : MonoBehaviour
 
     private int currentScene;
 
+    public Animator transitionAnim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,20 +77,28 @@ public class SceneTransition : MonoBehaviour
         //if (other.CompareTag("Player") && Energy.currentEnergy >= 3)
         if (other.CompareTag("Player") && Energy.currentEnergy >= Energy.neededEnergy)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            Energy.currentEnergy = 0;
-            Debug.Log("Teleported");
+            StartCoroutine(LoadScene());
         }
         else if (other.CompareTag("Player"))
         {
             cloneMessage = (GameObject)Instantiate(message);
         }
     }
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             Destroy(cloneMessage);
         }
+    }
+
+    IEnumerator LoadScene()
+    {
+        Energy.currentEnergy = 0;
+        Debug.Log("Teleported");
+        transitionAnim.SetTrigger("fadeOut");
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
