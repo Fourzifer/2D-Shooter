@@ -8,15 +8,29 @@ public class shooting : MonoBehaviour
     public GameObject playerBullet;
 
     public float bulletForce = 20f;
+    private float destroyDelay = 0.5f;
 
+    private float timeBtwShots;
+    public float startTimeBtwShots;
 
+    private void Start()
+    {
+        timeBtwShots = startTimeBtwShots;
+    }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")) 
+        if (timeBtwShots <= 0 && Input.GetButton("Fire1")) 
         {
             Shoot();
             FindObjectOfType<AudioManager>().Play("Bullet");
+
+            timeBtwShots = startTimeBtwShots;
+        }
+
+        else
+        {
+            timeBtwShots -= Time.deltaTime;
         }
     }
 
@@ -25,5 +39,6 @@ public class shooting : MonoBehaviour
         GameObject bullet = Instantiate(playerBullet, shootingBullet.position, shootingBullet.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(shootingBullet.up * bulletForce, ForceMode2D.Impulse);
+        Destroy(bullet, destroyDelay);
     }
 }
