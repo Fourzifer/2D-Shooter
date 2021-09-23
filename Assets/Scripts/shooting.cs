@@ -11,7 +11,7 @@ public class shooting : MonoBehaviour
     private float destroyDelay = 0.5f;
 
     private float timeBtwShots;
-    public float startTimeBtwShots;
+    private float startTimeBtwShots = 0.3f;
 
     private void Start()
     {

@@ -12,7 +12,7 @@ public class player : MonoBehaviour
     Vector2 moveInput;
     Vector2 mousePos;
 
-    public static int maxHealth = 10;
+    public static int maxHealth = 50;
     public int currentHealth;
 
 
