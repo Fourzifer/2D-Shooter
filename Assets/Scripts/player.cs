@@ -13,7 +13,7 @@ public class player : MonoBehaviour
     Vector2 mousePos;
 
     public static int maxHealth = 10;
-    public static int currentHealth;
+    public int currentHealth;
 
 
     public HealthBar healthBar;
@@ -27,7 +27,7 @@ public class player : MonoBehaviour
     public GameObject playerShip;
 
     public GameObject gameManager;
-    public GameObject lifeManager;
+    public Lives lifeManager;
 
 
     //public SpriteFlash spriteFlash;
@@ -53,12 +53,11 @@ public class player : MonoBehaviour
         //Player death
         if (currentHealth <= 0)
         {
+            lifeManager.lifeAmount--;
             FindObjectOfType<AudioManager>().Play("Death");
             gameManager.GetComponent<GameManager>().PlayerDeath();
             Enemy.totalEnemies = 0;
             Instantiate(deathEffect, transform.position, Quaternion.identity);
-            Energy.currentEnergy = 0;
-            lifeManager.GetComponent<Lives>().LoseLife();
 
         }
 
