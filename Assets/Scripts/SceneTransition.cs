@@ -12,6 +12,8 @@ public class SceneTransition : MonoBehaviour
 
     private int currentScene;
 
+    public Animator transitionAnim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +34,9 @@ public class SceneTransition : MonoBehaviour
                 Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 break;
             case 2:
-                Energy.neededEnergy = 15;
-                Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 Debug.Log("Level 3");
+                Energy.neededEnergy = 10;
+                Debug.Log("Needed energy: " + (Energy.neededEnergy));
 
                 break;
             case 3:
@@ -43,12 +45,12 @@ public class SceneTransition : MonoBehaviour
                 Debug.Log("Level 4");
                 break;
             case 4:
-                Energy.neededEnergy = 25;
+                Energy.neededEnergy = 10;
                 Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 Debug.Log("Level 5");
                 break;
             case 5:
-                Energy.neededEnergy = 30;
+                Energy.neededEnergy = 10;
                 Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 break;
             default:
@@ -75,20 +77,28 @@ public class SceneTransition : MonoBehaviour
         //if (other.CompareTag("Player") && Energy.currentEnergy >= 3)
         if (other.CompareTag("Player") && Energy.currentEnergy >= Energy.neededEnergy)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            Energy.currentEnergy = 0;
-            Debug.Log("Teleported");
+            StartCoroutine(LoadScene());
         }
         else if (other.CompareTag("Player"))
         {
             cloneMessage = (GameObject)Instantiate(message);
         }
     }
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             Destroy(cloneMessage);
         }
+    }
+
+    IEnumerator LoadScene()
+    {
+        Energy.currentEnergy = 0;
+        Debug.Log("Teleported");
+        transitionAnim.SetTrigger("fadeOut");
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

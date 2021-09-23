@@ -44,15 +44,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
+  - name: Title Theme
+    clip: {fileID: 8300000, guid: 9b034d0c7d57dda4491b14ad56ebd9fc, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: 19e7ba33ab5942143a51e1765704eef3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
   - name: Bullet
-    clip: {fileID: 8300000, guid: 3a978adb748f5714cad238270d75753f, type: 3}
-    volume: 0
+    clip: {fileID: 8300000, guid: 1b919d39070292f4faacbb46e46d2c32, type: 3}
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Theme
-    clip: {fileID: 8300000, guid: 365fa51c4d331ea4fa89dd94e7f22672, type: 3}
-    volume: 0
+  - name: Death
+    clip: {fileID: 8300000, guid: 11ff9b755a3ed5f4ca67425fec5f8c6b, type: 3}
+    volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Hit
+    clip: {fileID: 8300000, guid: 4051eefbd8487004fb8fa6f92ae081f1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Pickup1
+    clip: {fileID: 8300000, guid: ab06ee5ceab0add4d95852f3da4a9202, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Pickup2
+    clip: {fileID: 8300000, guid: 827c7b166f07eee4889b6498db7a76f8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Pickup3
+    clip: {fileID: 8300000, guid: 2b93f49f96564804ea7da4428da02d39, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Menu1
+    clip: {fileID: 8300000, guid: 8fda936da195f2646b85ad25efb0aa21, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Menu2
+    clip: {fileID: 8300000, guid: b0270f7203c709c4d821b364fb703cb8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Hit2
+    clip: {fileID: 8300000, guid: 9b9b4b975fce92c488509cc16b79343c, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Death2
+    clip: {fileID: 8300000, guid: 11ff9b755a3ed5f4ca67425fec5f8c6b, type: 3}
+    volume: 0.5
+    pitch: 2
+    loop: 0
     source: {fileID: 0}

@@ -23,6 +23,7 @@ public class Energy : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            FindObjectOfType<AudioManager>().Play("Pickup2");
             currentEnergy++;
             energyBar.SetEnergy(currentEnergy);
             Destroy(gameObject);

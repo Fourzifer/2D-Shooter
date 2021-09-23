@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class player : MonoBehaviour
 {
@@ -12,10 +13,12 @@ public class player : MonoBehaviour
     Vector2 mousePos;
 
     public static int maxHealth = 10;
-    public static int currentHealth;
+    public int currentHealth;
+
 
     public HealthBar healthBar;
     public GameObject deathEffect;
+    public GameObject lifeBar;
 
     public InGameMenu Menu;
     public InGameMenu CloneMenu;
@@ -24,6 +27,7 @@ public class player : MonoBehaviour
     public GameObject playerShip;
 
     public GameObject gameManager;
+    public Lives lifeManager;
 
 
     //public SpriteFlash spriteFlash;
@@ -49,10 +53,12 @@ public class player : MonoBehaviour
         //Player death
         if (currentHealth <= 0)
         {
+            lifeManager.lifeAmount--;
+            FindObjectOfType<AudioManager>().Play("Death");
             gameManager.GetComponent<GameManager>().PlayerDeath();
             Enemy.totalEnemies = 0;
             Instantiate(deathEffect, transform.position, Quaternion.identity);
-            Energy.currentEnergy = 0;
+
         }
 
         if (Input.GetButtonDown("Cancel"))
@@ -78,6 +84,9 @@ public class player : MonoBehaviour
         {
             currentHealth--;
             healthBar.SetHealth(currentHealth);
+            FindObjectOfType<AudioManager>().Play("Hit");
+
+            CinemachineShake.Instance.ShakeCamera(5f, .1f);
             //spriteFlash.Flash();
             //SpriteFlash.GetComponent<SpriteFlash>.Flash();
         }       
@@ -89,6 +98,7 @@ public class player : MonoBehaviour
         {
             currentHealth++;
             healthBar.SetHealth(currentHealth);
+            FindObjectOfType<AudioManager>().Play("Pickup3");
             Destroy(other.gameObject);
 
             if (currentHealth > maxHealth)
