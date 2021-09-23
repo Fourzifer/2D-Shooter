@@ -34,9 +34,9 @@ public class SceneTransition : MonoBehaviour
                 Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 break;
             case 2:
-                Energy.neededEnergy = 15;
-                Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 Debug.Log("Level 3");
+                Energy.neededEnergy = 10;
+                Debug.Log("Needed energy: " + (Energy.neededEnergy));
 
                 break;
             case 3:
@@ -45,12 +45,12 @@ public class SceneTransition : MonoBehaviour
                 Debug.Log("Level 4");
                 break;
             case 4:
-                Energy.neededEnergy = 25;
+                Energy.neededEnergy = 10;
                 Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 Debug.Log("Level 5");
                 break;
             case 5:
-                Energy.neededEnergy = 30;
+                Energy.neededEnergy = 10;
                 Debug.Log("Needed energy: " + (Energy.neededEnergy));
                 break;
             default:

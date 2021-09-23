@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Lives : MonoBehaviour
 {
     public int life;
+    [SerializeField]
     public int lifeAmount;
 
     public  Image[] hearts;
@@ -15,16 +16,6 @@ public class Lives : MonoBehaviour
 
     public void LoseLife()
     {
-            lifeAmount--;
             hearts[lifeAmount].enabled = false;
     }
-
-    public void GameOver()
-    {
-        if (lifeAmount == 0)
-        {
-            Debug.Log("Game lost");
-        }
-    }
-
 }
