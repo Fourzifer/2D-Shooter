@@ -39,8 +39,6 @@ public class BossMovement : MonoBehaviour
             nextPos = pos1.position;
         }
 
-
-
         transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
     }
 
@@ -51,6 +49,4 @@ public class BossMovement : MonoBehaviour
         Gizmos.DrawLine(pos3.position, pos4.position);
         Gizmos.DrawLine(pos4.position, pos1.position);
     }
-
-
 }
