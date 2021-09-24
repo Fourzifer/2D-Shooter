@@ -17,6 +17,12 @@ public class MainMenuButtons : MonoBehaviour
         Debug.Log("Game quit");
     }
 
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+        Debug.Log("MainMenu");
+    }
+
     public void Continue()
     {
         if (PlayerPrefs.HasKey("LastCheckpointX") && PlayerPrefs.HasKey("LastCheckpointY"))
