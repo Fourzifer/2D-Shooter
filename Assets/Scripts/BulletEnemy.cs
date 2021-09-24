@@ -88,8 +88,8 @@ public class BulletEnemy : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Death2");
             lastPosition = transform.position;
             Destroy(gameObject);
-            Instantiate(energyPrefab, lastPosition, Quaternion.identity);
             Instantiate(deathEffect, lastPosition, Quaternion.identity);
+            Instantiate(energyPrefab, lastPosition, Quaternion.identity);
         }
     }
 
@@ -99,7 +99,6 @@ public class BulletEnemy : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Hit2");
             enemyHealth--;
-            //spriteFlash.Flash();
         }
     }
 }
