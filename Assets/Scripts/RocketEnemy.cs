@@ -12,6 +12,7 @@ public class RocketEnemy : MonoBehaviour
     public static int totalEnemies;
 
     public GameObject energyPrefab;
+    public GameObject deathEffect;
 
     private Vector3 lastPosition;
 
@@ -68,6 +69,7 @@ public class RocketEnemy : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Death2");
             lastPosition = transform.position;
             Destroy(gameObject);
+            Instantiate(deathEffect, lastPosition, Quaternion.identity);
             Instantiate(energyPrefab, lastPosition, Quaternion.identity);
         }
     }
@@ -78,7 +80,6 @@ public class RocketEnemy : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Hit2");
             enemyHealth--;
-            //SpriteFlash.Flash();
         }
     }
 }
