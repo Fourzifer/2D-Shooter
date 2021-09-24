@@ -1,41 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
+
+
+    public GameObject deathEffect;
+    public GameObject playerShip;
+    public Lives lifeManager;
     [SerializeField]
-    private Vector2 lastCheckpointPos;
 
-    public Vector2 LastCheckpointPos
+    public void PlayerDeath()
     {
-        get { return lastCheckpointPos; }
-        set { lastCheckpointPos = value;  }
+        playerShip.SetActive(false);
+        StartCoroutine(PlayerDeath(3));
     }
-
-    private string lastCheckpointName;
-
-    public string LastCheckpointName
+    IEnumerator PlayerDeath(float time)
     {
-        get { return lastCheckpointName; }
-        set { lastCheckpointName = value;
-            Debug.Log("Checkpoint recorded: " + value);
-                }
-    }
-
-    private void Start()
-    {
-        if (PlayerPrefs.HasKey("LastCheckpointX") && PlayerPrefs.HasKey("LastCheckpointY"))
+        if (lifeManager.lifeAmount > 0)
         {
-            float xPos = PlayerPrefs.GetFloat("LastCheckpointX");
-            float yPos = PlayerPrefs.GetFloat("LastCheckpointY");
+            yield return new WaitForSeconds(time);
+            lifeManager.LoseLife();
+            playerShip.SetActive(true);
+            playerShip.GetComponent<player>().currentHealth = player.maxHealth;
+        }
+        else
+        {
+            yield return new WaitForSeconds(time);
+            playerShip.SetActive(true);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
-
-    private void OnApplicationQuit()
-    {   
-        if (lastCheckpointPos.x != 0f && lastCheckpointPos.y != 0f)
-        PlayerPrefs.SetFloat("LastCheckpointX", lastCheckpointPos.x);
-        PlayerPrefs.SetFloat("LastCheckpointY", lastCheckpointPos.y);
-    }
 }
+
+
+
