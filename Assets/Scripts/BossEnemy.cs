@@ -88,7 +88,7 @@ public class BossEnemy : MonoBehaviour
 
         if (enemyHealth <= 0)
         {
-            FindObjectOfType<AudioManager>().Play("Death2");
+
 
             StartCoroutine(TheEnd());
         }

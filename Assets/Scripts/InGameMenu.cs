@@ -11,7 +11,7 @@ public class InGameMenu : MonoBehaviour
 
     public void ReturnMainMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void PressNo()
