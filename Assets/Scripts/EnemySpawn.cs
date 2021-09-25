@@ -28,31 +28,23 @@ public class EnemySpawn : MonoBehaviour
             {
                 case 0:
                     print("Level 1 Spawn");
-                    enemyXPos = Random.Range(-25, 25);
+                    enemyXPos = Random.Range(-50, 25);
                     enemyYPos = Random.Range(-25, 25);
-                    break;
-                case 1:
-                    print("Level 2 Spawn");
-                    enemyXPos = Random.Range(-25, 25);
-                    enemyYPos = Random.Range(-25, 25);
-                    break;
-                case 2:
-                    print("Level 3");
                     break;
                 case 3:
-                    print("Level 4");
+                    print("Level 2 spawn");
+                    enemyXPos = Random.Range(-45, 25);
+                    enemyYPos = Random.Range(-50, 80);
                     break;
-                case 4:
-                    print("Level 5");
+                case 5:
+                    print("Level 4 spawn");
+                    enemyXPos = Random.Range(-50, 25);
+                    enemyYPos = Random.Range(-80, 30);
                     break;
                 default:
-                    enemyXPos = Random.Range(-25, 25);
-                    enemyYPos = Random.Range(-25, 25);
-                    print("default spawn");
+                    print("No enemy spawn");
                     break;
             }
-
-
 
             Vector3 enemyPosition = new Vector3(enemyXPos, enemyYPos, 0f);
 
