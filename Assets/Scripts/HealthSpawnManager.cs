@@ -14,7 +14,7 @@ public class HealthSpawnManager : MonoBehaviour
     void Start()
     {
         healthSpawnTimer = Random.Range(10, 10);
-        InvokeRepeating("SpawnHealth", 4.0f, healthSpawnTimer);
+        InvokeRepeating("SpawnHealth", 15.0f, healthSpawnTimer);
     }
 
     private void SpawnHealth()
