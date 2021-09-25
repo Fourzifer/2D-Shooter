@@ -7,11 +7,15 @@ public class BossEnemy : MonoBehaviour
 {
 
     [SerializeField]
-    private int enemyHealth;
     private Rigidbody2D rb, rb2;
+
+    public int enemyHealth;
+    public static int enemyMaxHealth = 100;
 
     public static int enemiesLeft;
     public static int totalEnemies;
+
+    public BossHealthBar HealthBar;
 
     public Animator transitionAnim;
     public GameObject deathEffect;
@@ -40,6 +44,10 @@ public class BossEnemy : MonoBehaviour
         rb2 = this.GetComponent<Rigidbody2D>();
 
         timeBtwShots = startTimeBtwShots;
+
+        enemyHealth = enemyMaxHealth;
+        HealthBar.SetMaxHealth(enemyMaxHealth);
+
     }
 
     // Update is called once per frame
@@ -109,6 +117,7 @@ public class BossEnemy : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Hit2");
             enemyHealth--;
+            HealthBar.SetHealth(enemyHealth);
         }
     }
 }
