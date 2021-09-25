@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TargetIndicator : MonoBehaviour
 {
-    public float hideDistance;
+    private float hideDistance = 15;
 
     private Transform portal;
 
