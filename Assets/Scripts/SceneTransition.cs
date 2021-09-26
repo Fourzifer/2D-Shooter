@@ -29,19 +29,19 @@ public class SceneTransition : MonoBehaviour
                 Energy.neededEnergy = 0;
                 break;
             case 1:
-                Energy.neededEnergy = 10;
+                Energy.neededEnergy = 5;
                 break;
             case 2:
-                Energy.neededEnergy = 15;
+                Energy.neededEnergy = 8;
                 break;
             case 3:
-                Energy.neededEnergy = 20;
+                Energy.neededEnergy = 10;
                 break;
             case 4:
-                Energy.neededEnergy = 25;
+                Energy.neededEnergy = 10;
                 break;
             case 5:
-                Energy.neededEnergy = 30;
+                Energy.neededEnergy = 10;
                 break;
             default:
                 print("Unrecognised level");

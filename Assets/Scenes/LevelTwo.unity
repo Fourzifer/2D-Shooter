@@ -1109,6 +1109,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9dbf14cd14b1442800a16bd2776ced, type: 3}
+--- !u!114 &442579546 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3459012613636865952, guid: ef9dbf14cd14b1442800a16bd2776ced, type: 3}
+  m_PrefabInstance: {fileID: 442579545}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0a6cf5ce336614ca3cbc9f950c138f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &523849837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2720,6 +2731,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4578027171465862248, guid: 6ed2739c0d684f44c80ab4548fd51839, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 2087999890}
+    - target: {fileID: 4578027171465862248, guid: 6ed2739c0d684f44c80ab4548fd51839, type: 3}
+      propertyPath: _energyBar
+      value: 
+      objectReference: {fileID: 442579546}
     - target: {fileID: 4578027171465862248, guid: 6ed2739c0d684f44c80ab4548fd51839, type: 3}
       propertyPath: playerShip
       value: 

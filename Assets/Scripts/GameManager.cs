@@ -11,7 +11,10 @@ public class GameManager : MonoBehaviour
     public GameObject deathEffect;
     public GameObject playerShip;
     public Lives lifeManager;
+    public HealthBar healthBar;
+
     [SerializeField]
+    private EnergyBar _energyBar;
 
     public void PlayerDeath()
     {
@@ -25,11 +28,14 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(time);
             lifeManager.LoseLife();
             playerShip.SetActive(true);
-            playerShip.GetComponent<Player>().currentHealth = Player.maxHealth;
+            playerShip.GetComponent<player>().currentHealth = player.maxHealth;
+            healthBar.SetHealth(player.maxHealth);
         }
         else
         {
             yield return new WaitForSeconds(time);
+            Energy.currentEnergy = 0;
+            _energyBar.SetEnergy(Energy.currentEnergy);
             playerShip.SetActive(true);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
