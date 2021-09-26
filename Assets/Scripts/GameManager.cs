@@ -28,8 +28,8 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(time);
             lifeManager.LoseLife();
             playerShip.SetActive(true);
-            playerShip.GetComponent<player>().currentHealth = player.maxHealth;
-            healthBar.SetHealth(player.maxHealth);
+            playerShip.GetComponent<Player>().currentHealth = Player.maxHealth;
+            healthBar.SetHealth(Player.maxHealth);
         }
         else
         {
