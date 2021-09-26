@@ -2634,6 +2634,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1100081651}
     - target: {fileID: 4578027171465862248, guid: 6ed2739c0d684f44c80ab4548fd51839, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 2111233383}
+    - target: {fileID: 4578027171465862248, guid: 6ed2739c0d684f44c80ab4548fd51839, type: 3}
+      propertyPath: _energyBar
+      value: 
+      objectReference: {fileID: 2111233388}
+    - target: {fileID: 4578027171465862248, guid: 6ed2739c0d684f44c80ab4548fd51839, type: 3}
       propertyPath: lifeAmount
       value: 0
       objectReference: {fileID: 0}
@@ -4039,6 +4047,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2111233388 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3459012613636865952, guid: ef9dbf14cd14b1442800a16bd2776ced, type: 3}
+  m_PrefabInstance: {fileID: 2111233382}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0a6cf5ce336614ca3cbc9f950c138f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &2115823866 stripped
