@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthSpawnManager : MonoBehaviour
 { 
-    public healthPickup health;
+    public HealthPickup health;
     [SerializeField]  
     private float healthXPos;
     private float healthYPos;
