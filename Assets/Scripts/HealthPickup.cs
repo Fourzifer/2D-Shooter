@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class healthPickup : MonoBehaviour
+public class HealthPickup : MonoBehaviour
 {
     public HealthBar healthBar;
     public GameObject health;
@@ -16,7 +16,7 @@ public class healthPickup : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            player playerComp = other.GetComponent<player>();
+            Player playerComp = other.GetComponent<Player>();
 
             playerComp.currentHealth = playerComp.currentHealth +5;
             healthBar.SetHealth(playerComp.currentHealth);

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class player : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float moveSpeed = 5f;
