@@ -8,6 +8,7 @@ public class BossEnemy : MonoBehaviour
 
     [SerializeField]
     private Rigidbody2D rb, rb2;
+    [SerializeField] private SpriteRenderer sr;
 
     public int enemyHealth;
     public static int enemyMaxHealth = 100;
@@ -89,6 +90,7 @@ public class BossEnemy : MonoBehaviour
 
             timeBtwShots = startTimeBtwShots;
         }
+
         else
         {
             timeBtwShots -= Time.deltaTime;
@@ -96,10 +98,21 @@ public class BossEnemy : MonoBehaviour
 
         if (enemyHealth <= 0)
         {
-
-
             StartCoroutine(TheEnd());
         }
+    }
+
+    private void DecreaseOpacity()
+    {
+        sr.color = new Color(1f, 1f, 1f, .1f);
+        Invoke("IncreaseOpacity", 0.1f);
+        Debug.Log("Decrease Opacity");
+    }
+
+    private void IncreaseOpacity()
+    {
+        sr.color = new Color(1f, 1f, 1f, 1f);
+        Debug.Log("Increase Opacity");
     }
 
     IEnumerator TheEnd()
@@ -118,6 +131,7 @@ public class BossEnemy : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Hit2");
             enemyHealth--;
             HealthBar.SetHealth(enemyHealth);
+            Invoke("DecreaseOpacity", 0f);
         }
     }
 }

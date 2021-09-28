@@ -8,6 +8,8 @@ public class BulletEnemy : MonoBehaviour
     [SerializeField]
     private int enemyHealth;
     private Rigidbody2D rb;
+    public SpriteRenderer sr;
+
     public static int enemiesLeft;
     public static int totalEnemies;
     public static int currentEnemies;
@@ -93,12 +95,26 @@ public class BulletEnemy : MonoBehaviour
         }
     }
 
+    private void DecreaseOpacity()
+    {
+        sr.color = new Color(1f, 1f, 1f, .1f);
+        Invoke("IncreaseOpacity", 0.1f);
+        Debug.Log("Decrease Opacity");
+    }
+
+    private void IncreaseOpacity()
+    {
+        sr.color = new Color(1f, 1f, 1f, 1f);
+        Debug.Log("Increase Opacity");
+    }
+
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "PlayerBullet")
         {
             FindObjectOfType<AudioManager>().Play("Hit2");
             enemyHealth--;
+            Invoke("DecreaseOpacity", 0f);
         }
     }
 }
