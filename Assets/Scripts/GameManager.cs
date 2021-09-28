@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
-
     public GameObject deathEffect;
     public GameObject playerShip;
     public Lives lifeManager;

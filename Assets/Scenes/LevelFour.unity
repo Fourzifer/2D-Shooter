@@ -193,6 +193,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1851565013790384709, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
+--- !u!212 &101335593 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7209317257638654391, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
+  m_PrefabInstance: {fileID: 183538378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &105310788
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 101335593}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   bulletForce: 0
@@ -640,6 +646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 0}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   speed: 0
@@ -673,6 +680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 0}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   speed: 0
@@ -696,6 +704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 612020426}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   bulletForce: 0
@@ -1049,6 +1058,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4639804771425138172, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
   m_PrefabInstance: {fileID: 357454815}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &370469124 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7209317257638654391, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
+  m_PrefabInstance: {fileID: 551769249}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &417115947
 PrefabInstance:
@@ -1640,6 +1654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 370469124}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   bulletForce: 0
@@ -1660,6 +1675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 0}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   speed: 0
@@ -1674,6 +1690,11 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1354441895532949534, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
   m_PrefabInstance: {fileID: 551769249}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &612020426 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7209317257638654391, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
+  m_PrefabInstance: {fileID: 1591265899}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &613404110 stripped
 Transform:
@@ -1836,6 +1857,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4639804771425138172, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
   m_PrefabInstance: {fileID: 711412654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &728425599 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7209317257638654391, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
+  m_PrefabInstance: {fileID: 2049056288}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &830398003
 PrefabInstance:
@@ -2932,6 +2958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 1504449732}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   bulletForce: 0
@@ -2952,6 +2979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 0}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   speed: 0
@@ -2967,10 +2995,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1354441895532949534, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
   m_PrefabInstance: {fileID: 1348204280}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &1364909111 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7209317257638654391, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
+  m_PrefabInstance: {fileID: 1568602092}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1479271184 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 464463837433238070, guid: 10b941b4559fb1b48884f59bf6a18ecf, type: 3}
   m_PrefabInstance: {fileID: 1011296448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1504449732 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7209317257638654391, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
+  m_PrefabInstance: {fileID: 1348204280}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1554608349 stripped
 Transform:
@@ -3066,6 +3104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 1364909111}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   bulletForce: 0
@@ -3086,6 +3125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 0}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   speed: 0
@@ -3261,6 +3301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 1659280764}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   bulletForce: 0
@@ -3281,6 +3322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 0}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   speed: 0
@@ -3300,6 +3342,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3207382098598536941, guid: 13a59e55fe46caf43bd4abdc97da359f, type: 3}
   m_PrefabInstance: {fileID: 417115947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1659280764 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7209317257638654391, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
+  m_PrefabInstance: {fileID: 1619221345}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1700526731
 PrefabInstance:
@@ -3792,6 +3839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 728425599}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   bulletForce: 0

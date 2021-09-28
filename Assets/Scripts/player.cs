@@ -34,8 +34,6 @@ public class player : MonoBehaviour
 
     private bool invincible;
 
-    //public SpriteFlash spriteFlash;
-
     private void Start()
     {
         currentHealth = maxHealth;
@@ -88,11 +86,13 @@ public class player : MonoBehaviour
     {
         invincible = false;
     }
+
     private void DecreaseOpacity()
     {
         sr.color = new Color(1f, 1f, 1f, .1f);
         Invoke("IncreaseOpacity", 0.1f);
     }
+
     private void IncreaseOpacity()
     {
         sr.color = new Color(1f, 1f, 1f, 1f);
