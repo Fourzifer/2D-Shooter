@@ -1374,6 +1374,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5490854369895887251, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
+      propertyPath: sr
+      value: 
+      objectReference: {fileID: 1281595609}
+    - target: {fileID: 5490854369895887251, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 1088548996}
@@ -2286,6 +2290,11 @@ GameObject:
 --- !u!4 &1281595600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7847595520740231092, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
+  m_PrefabInstance: {fileID: 766137944}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1281595609 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7847595520740231095, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
   m_PrefabInstance: {fileID: 766137944}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1287681015

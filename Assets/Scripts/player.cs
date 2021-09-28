@@ -7,6 +7,10 @@ using UnityEngine.UI;
 public class player : MonoBehaviour
 {
     public Rigidbody2D rb;
+    
+    [SerializeField]
+    private SpriteRenderer sr;
+
     public float moveSpeed = 5f;
     public Camera cam;
     Vector2 moveInput;
@@ -14,7 +18,6 @@ public class player : MonoBehaviour
 
     public static int maxHealth = 10;
     public int currentHealth;
-
 
     public HealthBar healthBar;
     public GameObject deathEffect;
@@ -61,7 +64,7 @@ public class player : MonoBehaviour
             Instantiate(deathEffect, transform.position, Quaternion.identity);
 
             invincible = true;
-            Invoke("resetInvulnerability", 5);
+            Invoke("ResetInvulnerability", 5);
         }
 
         if (Input.GetButtonDown("Cancel"))
@@ -81,9 +84,18 @@ public class player : MonoBehaviour
         rb.rotation = angle;
     }
 
-    void resetInvulnerability()
+    void ResetInvulnerability()
     {
         invincible = false;
+    }
+    private void DecreaseOpacity()
+    {
+        sr.color = new Color(1f, 1f, 1f, .1f);
+        Invoke("IncreaseOpacity", 0.1f);
+    }
+    private void IncreaseOpacity()
+    {
+        sr.color = new Color(1f, 1f, 1f, 1f);
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -94,6 +106,7 @@ public class player : MonoBehaviour
             healthBar.SetHealth(currentHealth);
             FindObjectOfType<AudioManager>().Play("Hit");
 
+            Invoke("DecreaseOpacity", 0f);
             CinemachineShake.Instance.ShakeCamera(5f, .1f);
         }       
     }
