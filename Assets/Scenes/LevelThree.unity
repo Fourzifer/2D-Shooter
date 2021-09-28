@@ -833,7 +833,7 @@ MonoBehaviour:
   stoppingDistance: 0
   retreatDistance: 0
   shootingDistance: 30
-  startTimeBtwShots: 2
+  startTimeBtwShots: 3
   projectile: {fileID: 5089140234521520154, guid: 91c00f3a193255748a8acaea211078d5, type: 3}
   shootingBullet: {fileID: 292419772}
   bulletForce: 0
@@ -1837,7 +1837,7 @@ MonoBehaviour:
   stoppingDistance: 0
   retreatDistance: 0
   shootingDistance: 30
-  startTimeBtwShots: 2
+  startTimeBtwShots: 3
   projectile: {fileID: 5089140234521520154, guid: 91c00f3a193255748a8acaea211078d5, type: 3}
   shootingBullet: {fileID: 904243055}
   bulletForce: 0
