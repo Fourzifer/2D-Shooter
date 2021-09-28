@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooting : MonoBehaviour
+public class shooting : MonoBehaviour
 {
     public Transform shootingBullet;
     public GameObject playerBullet;
