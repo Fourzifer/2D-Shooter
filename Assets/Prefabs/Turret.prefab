@@ -250,7 +250,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 7209317257638654391}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
+  deathEffect: {fileID: 0}
   bulletForce: 0
   shootingDistance: 20
   startTimeBtwShots: 1

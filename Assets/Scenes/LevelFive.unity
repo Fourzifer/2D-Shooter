@@ -1921,6 +1921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 942623738}
   energyPrefab: {fileID: 0}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   speed: 0
@@ -1931,6 +1932,11 @@ MonoBehaviour:
   projectile: {fileID: 3064105678983609938, guid: d477f9ed22b51014aaccd2b46e52b6e1, type: 3}
   shootingBullet: {fileID: 942623736}
   bulletForce: 0
+--- !u!212 &942623738 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7209317257638654391, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
+  m_PrefabInstance: {fileID: 942623734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &942623742 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1354441895532949534, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
@@ -2065,6 +2071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 1020528161}
   energyPrefab: {fileID: 0}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   speed: 0
@@ -2075,6 +2082,11 @@ MonoBehaviour:
   projectile: {fileID: 3064105678983609938, guid: d477f9ed22b51014aaccd2b46e52b6e1, type: 3}
   shootingBullet: {fileID: 1020528159}
   bulletForce: 0
+--- !u!212 &1020528161 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7209317257638654391, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
+  m_PrefabInstance: {fileID: 1020528157}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1020528165 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1354441895532949534, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
@@ -2781,6 +2793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 1731953313}
   energyPrefab: {fileID: 0}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   speed: 0
@@ -2791,6 +2804,11 @@ MonoBehaviour:
   projectile: {fileID: 3064105678983609938, guid: d477f9ed22b51014aaccd2b46e52b6e1, type: 3}
   shootingBullet: {fileID: 1731953311}
   bulletForce: 0
+--- !u!212 &1731953313 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7209317257638654391, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
+  m_PrefabInstance: {fileID: 1731953309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1731953317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1354441895532949534, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
@@ -2983,6 +3001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1969184790}
   rb2: {fileID: 0}
+  sr: {fileID: 1969184792}
   enemyHealth: 100
   HealthBar: {fileID: 877191878}
   transitionAnim: {fileID: 1300890605}
@@ -2999,6 +3018,11 @@ MonoBehaviour:
 --- !u!50 &1969184790 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 4088705668951905319, guid: 01bd149091cfb5e448d05584313b2f38, type: 3}
+  m_PrefabInstance: {fileID: 329599377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1969184792 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4088705668951905318, guid: 01bd149091cfb5e448d05584313b2f38, type: 3}
   m_PrefabInstance: {fileID: 329599377}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1969184793 stripped
@@ -3119,6 +3143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 20
+  sr: {fileID: 2040410797}
   energyPrefab: {fileID: 0}
   deathEffect: {fileID: 2958239662946132865, guid: db9ea32509d95c848be00248ffd9d9b2, type: 3}
   speed: 0
@@ -3129,6 +3154,11 @@ MonoBehaviour:
   projectile: {fileID: 3064105678983609938, guid: d477f9ed22b51014aaccd2b46e52b6e1, type: 3}
   shootingBullet: {fileID: 2040410795}
   bulletForce: 0
+--- !u!212 &2040410797 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7209317257638654391, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
+  m_PrefabInstance: {fileID: 2040410793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2040410801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1354441895532949534, guid: 9e4b3d2c07a1d654f9275697dbe9118e, type: 3}
