@@ -16,7 +16,7 @@ public class HealthPickup : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Player playerComp = other.GetComponent<Player>();
+            player playerComp = other.GetComponent<player>();
 
             playerComp.currentHealth = playerComp.currentHealth +5;
             healthBar.SetHealth(playerComp.currentHealth);
