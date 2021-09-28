@@ -674,6 +674,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a6ba9b6dae43bb24e955b1ba85140fdc, type: 3}
     - target: {fileID: 1734158577247636606, guid: 01bd149091cfb5e448d05584313b2f38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734158577247636606, guid: 01bd149091cfb5e448d05584313b2f38, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -1448,6 +1452,11 @@ Transform:
 --- !u!1 &686726387 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1734158577247636606, guid: 01bd149091cfb5e448d05584313b2f38, type: 3}
+  m_PrefabInstance: {fileID: 329599377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &686726389 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1734158577247636601, guid: 01bd149091cfb5e448d05584313b2f38, type: 3}
   m_PrefabInstance: {fileID: 329599377}
   m_PrefabAsset: {fileID: 0}
 --- !u!50 &686726390
@@ -3001,7 +3010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1969184790}
   rb2: {fileID: 0}
-  sr: {fileID: 1969184792}
+  sr: {fileID: 686726389}
   enemyHealth: 100
   HealthBar: {fileID: 877191878}
   transitionAnim: {fileID: 1300890605}
@@ -3018,11 +3027,6 @@ MonoBehaviour:
 --- !u!50 &1969184790 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 4088705668951905319, guid: 01bd149091cfb5e448d05584313b2f38, type: 3}
-  m_PrefabInstance: {fileID: 329599377}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &1969184792 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 4088705668951905318, guid: 01bd149091cfb5e448d05584313b2f38, type: 3}
   m_PrefabInstance: {fileID: 329599377}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1969184793 stripped
