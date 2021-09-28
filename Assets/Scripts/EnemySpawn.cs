@@ -9,6 +9,7 @@ public class EnemySpawn : MonoBehaviour
     private float enemyXPos;
     private float enemyYPos;
     private float enemySpawnTimer;
+    public float maxSpawned;
 
     private int currentScene;
 
@@ -46,12 +47,20 @@ public class EnemySpawn : MonoBehaviour
                     break;
             }
 
+            enemySpawned = true;
+            print("Spawned");
+
             Vector3 enemyPosition = new Vector3(enemyXPos, enemyYPos, 0f);
 
-            Instantiate(enemy, enemyPosition, Quaternion.identity);
+            if (BulletEnemy.currentEnemies <= maxSpawned)
+            {
+                Instantiate(enemy, enemyPosition, Quaternion.identity);
 
-            enemySpawned = true;
-            Debug.Log("Spawned");
+                print("Spawned");
+                Debug.Log("Max spawned: " + maxSpawned);
+                Debug.Log("Current spawned: " + BulletEnemy.currentEnemies);
+            }
+
         }
     }
 }
