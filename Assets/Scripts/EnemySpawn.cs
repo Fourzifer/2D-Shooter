@@ -9,7 +9,7 @@ public class EnemySpawn : MonoBehaviour
     private float enemyXPos;
     private float enemyYPos;
     private float enemySpawnTimer;
-    private float maxSpawned = 4;
+    public float maxSpawned;
 
     private int currentScene;
 
@@ -56,7 +56,7 @@ public class EnemySpawn : MonoBehaviour
             {
                 Instantiate(enemy, enemyPosition, Quaternion.identity);
 
-                //print("Spawned");
+                print("Spawned");
                 Debug.Log("Max spawned: " + maxSpawned);
                 Debug.Log("Current spawned: " + BulletEnemy.currentEnemies);
             }
