@@ -29,6 +29,7 @@ public class player : MonoBehaviour
     public GameObject gameManager;
     public Lives lifeManager;
 
+    private bool invincible;
 
     //public SpriteFlash spriteFlash;
 
@@ -38,6 +39,7 @@ public class player : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
 
         currentScene = SceneManager.GetActiveScene().buildIndex;
+        invincible = false;
     }
 
     // Update is called once per frame
@@ -56,9 +58,10 @@ public class player : MonoBehaviour
             lifeManager.lifeAmount--;
             FindObjectOfType<AudioManager>().Play("Death");
             gameManager.GetComponent<GameManager>().PlayerDeath();
-            Enemy.totalEnemies = 0;
             Instantiate(deathEffect, transform.position, Quaternion.identity);
 
+            invincible = true;
+            Invoke("resetInvulnerability", 5);
         }
 
         if (Input.GetButtonDown("Cancel"))
@@ -78,17 +81,20 @@ public class player : MonoBehaviour
         rb.rotation = angle;
     }
 
+    void resetInvulnerability()
+    {
+        invincible = false;
+    }
+
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "EnemyBullet" || other.gameObject.tag == "DamageCollider")
+        if (!invincible && (other.gameObject.tag == "EnemyBullet" || other.gameObject.tag == "DamageCollider"))
         {
             currentHealth--;
             healthBar.SetHealth(currentHealth);
             FindObjectOfType<AudioManager>().Play("Hit");
 
             CinemachineShake.Instance.ShakeCamera(5f, .1f);
-            //spriteFlash.Flash();
-            //SpriteFlash.GetComponent<SpriteFlash>.Flash();
         }       
     }
 
