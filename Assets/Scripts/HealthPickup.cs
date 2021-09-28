@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class healthPickup : MonoBehaviour
+public class HealthPickup : MonoBehaviour
 {
     public HealthBar healthBar;
     public GameObject health;
