@@ -126,7 +126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8814f31c7bbce4f47a606d88ff694a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hideDistance: 0
 --- !u!1 &7847595519911626705
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,9 +197,9 @@ GameObject:
   - component: {fileID: 7847595520740231092}
   - component: {fileID: 7847595520740231095}
   - component: {fileID: 7847595520740231094}
-  - component: {fileID: 7847595520740231089}
-  - component: {fileID: 7847595520740231088}
-  - component: {fileID: 7847595520740231093}
+  - component: {fileID: 5490854369895887251}
+  - component: {fileID: 2786625078269999905}
+  - component: {fileID: 9085041028867815238}
   - component: {fileID: 642843369702465187}
   - component: {fileID: 1577227756}
   - component: {fileID: 1321361517608970285}
@@ -301,7 +300,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7847595520740231089
+--- !u!114 &5490854369895887251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -310,19 +309,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 7847595520740231091}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c4afeb6d17debd46afda295757cefce, type: 3}
+  m_Script: {fileID: 11500000, guid: 998cd451164621a45b09cfd09ebd90ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7847595520740231094}
   moveSpeed: 5
   cam: {fileID: 0}
+  currentHealth: 0
   healthBar: {fileID: 0}
   deathEffect: {fileID: 0}
+  lifeBar: {fileID: 0}
   Menu: {fileID: 0}
   CloneMenu: {fileID: 0}
   playerShip: {fileID: 0}
   gameManager: {fileID: 0}
---- !u!114 &7847595520740231088
+  lifeManager: {fileID: 0}
+--- !u!114 &2786625078269999905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -331,13 +333,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7847595520740231091}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d576ad44c280d144847063a18cbc319, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a7ce87b5dabd0748a204a74ae9e4612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shootingBullet: {fileID: 7847595519911626710}
   playerBullet: {fileID: 5123687104342395395, guid: 4d5b3a9da9400574893b3031b5e3add5, type: 3}
   bulletForce: 40
---- !u!114 &7847595520740231093
+--- !u!114 &9085041028867815238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -346,7 +348,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7847595520740231091}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d576ad44c280d144847063a18cbc319, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a7ce87b5dabd0748a204a74ae9e4612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shootingBullet: {fileID: 7847595520443595762}
