@@ -10,6 +10,7 @@ public class BulletEnemy : MonoBehaviour
     private Rigidbody2D rb;
     public static int enemiesLeft;
     public static int totalEnemies;
+    public static int currentEnemies;
 
     public GameObject energyPrefab;
     public GameObject deathEffect;
@@ -30,8 +31,6 @@ public class BulletEnemy : MonoBehaviour
     public Transform shootingBullet;
     public float bulletForce = 20f;
 
-    //public SpriteFlash spriteFlash;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +38,8 @@ public class BulletEnemy : MonoBehaviour
         rb = this.GetComponent<Rigidbody2D>();
 
         timeBtwShots = startTimeBtwShots;
+        currentEnemies += 1;
+        print(currentEnemies);
     }
 
     // Update is called once per frame
@@ -70,9 +71,6 @@ public class BulletEnemy : MonoBehaviour
         //Shoot if close to player
         if (timeBtwShots <= 0 && Vector2.Distance(transform.position, player.position) <= shootingDistance)
         {
-            //Old rotation
-            //Instantiate(projectile, transform.position, transform.rotation);
-            //New rotation
             GameObject bullet = Instantiate(projectile, shootingBullet.position, shootingBullet.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(shootingBullet.up * bulletForce, ForceMode2D.Impulse);
@@ -87,6 +85,8 @@ public class BulletEnemy : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Death2");
             lastPosition = transform.position;
+            currentEnemies -= 1;
+            print(currentEnemies);
             Destroy(gameObject);
             Instantiate(deathEffect, lastPosition, Quaternion.identity);
             Instantiate(energyPrefab, lastPosition, Quaternion.identity);
