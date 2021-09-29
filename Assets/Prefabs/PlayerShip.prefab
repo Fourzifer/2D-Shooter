@@ -202,7 +202,6 @@ GameObject:
   - component: {fileID: 9085041028867815238}
   - component: {fileID: 642843369702465187}
   - component: {fileID: 1577227756}
-  - component: {fileID: 1321361517608970285}
   - component: {fileID: -1732148982790399273}
   m_Layer: 3
   m_Name: PlayerShip
@@ -387,25 +386,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.021467447, y: 0}
+  m_Offset: {x: 0.002791077, y: 0}
   serializedVersion: 2
-  m_Radius: 0.3860566
---- !u!58 &1321361517608970285
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7847595520740231091}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.021467447, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.3860566
+  m_Radius: 0.31644467
 --- !u!114 &-1732148982790399273
 MonoBehaviour:
   m_ObjectHideFlags: 0
