@@ -136,15 +136,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3237019492302655785, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Color.b
-      value: 0.30941075
+      value: 0.9634263
       objectReference: {fileID: 0}
     - target: {fileID: 3237019492302655785, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Color.g
-      value: 0.3301887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3237019492302655785, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Color.r
-      value: 0.05762727
+      value: 0.495283
       objectReference: {fileID: 0}
     - target: {fileID: 4110041490647840281, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Name
@@ -281,15 +281,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3237019492302655785, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Color.b
-      value: 0.30941075
+      value: 0.9634263
       objectReference: {fileID: 0}
     - target: {fileID: 3237019492302655785, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Color.g
-      value: 0.3301887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3237019492302655785, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Color.r
-      value: 0.05762727
+      value: 0.495283
       objectReference: {fileID: 0}
     - target: {fileID: 4110041490647840281, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Name
@@ -472,6 +472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: borderAsteroid3
       objectReference: {fileID: 0}
+    - target: {fileID: 4819614028598521298, guid: dc27a6d34804ab54584f02d222466e3a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc27a6d34804ab54584f02d222466e3a, type: 3}
 --- !u!4 &188431142 stripped
@@ -607,6 +611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BorderAsteroid2
       objectReference: {fileID: 0}
+    - target: {fileID: 548576021246601671, guid: 63c692b5f61265247b2572d0c4b804d1, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63c692b5f61265247b2572d0c4b804d1, type: 3}
 --- !u!1001 &268354381
@@ -619,6 +627,10 @@ PrefabInstance:
     - target: {fileID: 2031334675719609045, guid: 843da7e4cf87b634481d232345df2635, type: 3}
       propertyPath: m_Name
       value: BorderAsteroid (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031334675719609045, guid: 843da7e4cf87b634481d232345df2635, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2031334675719609064, guid: 843da7e4cf87b634481d232345df2635, type: 3}
       propertyPath: m_Color.b
@@ -820,7 +832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 968147289799000838, guid: 56b525f64a693204e96908c66ba579b4, type: 3}
       propertyPath: m_Color.b
-      value: 0.3755461
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 968147289799000838, guid: 56b525f64a693204e96908c66ba579b4, type: 3}
       propertyPath: m_Color.g
@@ -828,7 +840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 968147289799000838, guid: 56b525f64a693204e96908c66ba579b4, type: 3}
       propertyPath: m_Color.r
-      value: 0.3443396
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56b525f64a693204e96908c66ba579b4, type: 3}
@@ -921,15 +933,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 464463837433238069, guid: 10b941b4559fb1b48884f59bf6a18ecf, type: 3}
       propertyPath: m_Color.b
-      value: 0.30941075
+      value: 0.9634263
       objectReference: {fileID: 0}
     - target: {fileID: 464463837433238069, guid: 10b941b4559fb1b48884f59bf6a18ecf, type: 3}
       propertyPath: m_Color.g
-      value: 0.3301887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 464463837433238069, guid: 10b941b4559fb1b48884f59bf6a18ecf, type: 3}
       propertyPath: m_Color.r
-      value: 0.05762727
+      value: 0.495283
       objectReference: {fileID: 0}
     - target: {fileID: 464463837433238070, guid: 10b941b4559fb1b48884f59bf6a18ecf, type: 3}
       propertyPath: m_RootOrder
@@ -1311,6 +1323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: borderAsteroid3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819614028598521298, guid: dc27a6d34804ab54584f02d222466e3a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc27a6d34804ab54584f02d222466e3a, type: 3}
 --- !u!4 &631580995 stripped
@@ -1608,6 +1624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: borderAsteroid3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819614028598521298, guid: dc27a6d34804ab54584f02d222466e3a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc27a6d34804ab54584f02d222466e3a, type: 3}
 --- !u!1001 &819646130
@@ -1754,6 +1774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BorderAsteroid2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 548576021246601671, guid: 63c692b5f61265247b2572d0c4b804d1, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63c692b5f61265247b2572d0c4b804d1, type: 3}
 --- !u!1001 &862916225
@@ -1899,6 +1923,18 @@ PrefabInstance:
     - target: {fileID: 7637025915431524950, guid: 4657146e56aff81448da5343788305fb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637025915431524951, guid: 4657146e56aff81448da5343788305fb, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637025915431524951, guid: 4657146e56aff81448da5343788305fb, type: 3}
+      propertyPath: m_Color.g
+      value: 0.68178356
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637025915431524951, guid: 4657146e56aff81448da5343788305fb, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5807227
       objectReference: {fileID: 0}
     - target: {fileID: 7637025915431524951, guid: 4657146e56aff81448da5343788305fb, type: 3}
       propertyPath: m_SortingOrder
@@ -2053,6 +2089,10 @@ PrefabInstance:
     - target: {fileID: 2031334675719609045, guid: 843da7e4cf87b634481d232345df2635, type: 3}
       propertyPath: m_Name
       value: BorderAsteroid (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031334675719609045, guid: 843da7e4cf87b634481d232345df2635, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2031334675719609064, guid: 843da7e4cf87b634481d232345df2635, type: 3}
       propertyPath: m_Color.b
@@ -2267,6 +2307,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 626c4f800973e5b459e6e667ee84928a, type: 3}
     - target: {fileID: 7637025915431524951, guid: 4657146e56aff81448da5343788305fb, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637025915431524951, guid: 4657146e56aff81448da5343788305fb, type: 3}
+      propertyPath: m_Color.g
+      value: 0.68178356
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637025915431524951, guid: 4657146e56aff81448da5343788305fb, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5807227
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637025915431524951, guid: 4657146e56aff81448da5343788305fb, type: 3}
       propertyPath: m_SortingOrder
       value: -3
       objectReference: {fileID: 0}
@@ -2354,15 +2406,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3207382098598536942, guid: 13a59e55fe46caf43bd4abdc97da359f, type: 3}
       propertyPath: m_Color.b
-      value: 0.30941075
+      value: 0.9634263
       objectReference: {fileID: 0}
     - target: {fileID: 3207382098598536942, guid: 13a59e55fe46caf43bd4abdc97da359f, type: 3}
       propertyPath: m_Color.g
-      value: 0.3301887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3207382098598536942, guid: 13a59e55fe46caf43bd4abdc97da359f, type: 3}
       propertyPath: m_Color.r
-      value: 0.05762727
+      value: 0.495283
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13a59e55fe46caf43bd4abdc97da359f, type: 3}
@@ -2385,15 +2437,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3237019492302655785, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Color.b
-      value: 0.30941075
+      value: 0.9634263
       objectReference: {fileID: 0}
     - target: {fileID: 3237019492302655785, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Color.g
-      value: 0.3301887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3237019492302655785, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Color.r
-      value: 0.05762727
+      value: 0.495283
       objectReference: {fileID: 0}
     - target: {fileID: 4110041490647840281, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Name
@@ -2572,6 +2624,10 @@ PrefabInstance:
     - target: {fileID: 4819614028598521298, guid: dc27a6d34804ab54584f02d222466e3a, type: 3}
       propertyPath: m_Name
       value: borderAsteroid3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819614028598521298, guid: dc27a6d34804ab54584f02d222466e3a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc27a6d34804ab54584f02d222466e3a, type: 3}
@@ -2925,15 +2981,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3237019492302655785, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Color.b
-      value: 0.30941075
+      value: 0.9634263
       objectReference: {fileID: 0}
     - target: {fileID: 3237019492302655785, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Color.g
-      value: 0.3301887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3237019492302655785, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Color.r
-      value: 0.05762727
+      value: 0.495283
       objectReference: {fileID: 0}
     - target: {fileID: 4110041490647840281, guid: fdbb5ff22dce0bc4e82d0e41ab4a60b6, type: 3}
       propertyPath: m_Name
@@ -3008,15 +3064,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 464463837433238069, guid: 10b941b4559fb1b48884f59bf6a18ecf, type: 3}
       propertyPath: m_Color.b
-      value: 0.30941075
+      value: 0.9634263
       objectReference: {fileID: 0}
     - target: {fileID: 464463837433238069, guid: 10b941b4559fb1b48884f59bf6a18ecf, type: 3}
       propertyPath: m_Color.g
-      value: 0.3301887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 464463837433238069, guid: 10b941b4559fb1b48884f59bf6a18ecf, type: 3}
       propertyPath: m_Color.r
-      value: 0.05762727
+      value: 0.495283
       objectReference: {fileID: 0}
     - target: {fileID: 464463837433238070, guid: 10b941b4559fb1b48884f59bf6a18ecf, type: 3}
       propertyPath: m_RootOrder
@@ -3115,6 +3171,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.data[12].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5815b88265dda774db40ca19b2e9f7b9, type: 3}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.data[12].name
+      value: Laser4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.data[12].pitch
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.data[12].volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1336550789003482917, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -3188,15 +3264,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3207382098598536942, guid: 13a59e55fe46caf43bd4abdc97da359f, type: 3}
       propertyPath: m_Color.b
-      value: 0.30941075
+      value: 0.9634263
       objectReference: {fileID: 0}
     - target: {fileID: 3207382098598536942, guid: 13a59e55fe46caf43bd4abdc97da359f, type: 3}
       propertyPath: m_Color.g
-      value: 0.3301887
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3207382098598536942, guid: 13a59e55fe46caf43bd4abdc97da359f, type: 3}
       propertyPath: m_Color.r
-      value: 0.05762727
+      value: 0.495283
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13a59e55fe46caf43bd4abdc97da359f, type: 3}
@@ -3497,6 +3573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BorderAsteroid
       objectReference: {fileID: 0}
+    - target: {fileID: 2031334675719609045, guid: 843da7e4cf87b634481d232345df2635, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2031334675719609064, guid: 843da7e4cf87b634481d232345df2635, type: 3}
       propertyPath: m_Color.b
       value: 0.4716981
@@ -3574,6 +3654,10 @@ PrefabInstance:
     - target: {fileID: 2031334675719609045, guid: 843da7e4cf87b634481d232345df2635, type: 3}
       propertyPath: m_Name
       value: BorderAsteroid (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031334675719609045, guid: 843da7e4cf87b634481d232345df2635, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2031334675719609064, guid: 843da7e4cf87b634481d232345df2635, type: 3}
       propertyPath: m_Color.b
@@ -3971,6 +4055,18 @@ PrefabInstance:
     - target: {fileID: 7637025915431524950, guid: 4657146e56aff81448da5343788305fb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637025915431524951, guid: 4657146e56aff81448da5343788305fb, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637025915431524951, guid: 4657146e56aff81448da5343788305fb, type: 3}
+      propertyPath: m_Color.g
+      value: 0.68178356
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637025915431524951, guid: 4657146e56aff81448da5343788305fb, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5807227
       objectReference: {fileID: 0}
     - target: {fileID: 7637025915431524951, guid: 4657146e56aff81448da5343788305fb, type: 3}
       propertyPath: m_SortingOrder

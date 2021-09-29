@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ImageManager : MonoBehaviour
 {
     public Image mainImage;
+    private Texture2D texture;
 
     private Queue<Image> images;
 

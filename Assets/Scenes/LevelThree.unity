@@ -1090,6 +1090,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5490854369895887251, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
+      propertyPath: sr
+      value: 
+      objectReference: {fileID: 454192452}
+    - target: {fileID: 5490854369895887251, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 157186986}
@@ -1175,6 +1179,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
+--- !u!212 &454192452 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7847595520740231095, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
+  m_PrefabInstance: {fileID: 454192451}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &510789752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2537,6 +2546,26 @@ PrefabInstance:
     - target: {fileID: 1336550789003482915, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.data[12].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5815b88265dda774db40ca19b2e9f7b9, type: 3}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.data[12].name
+      value: Laser4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.data[12].pitch
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336550789003482916, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
+      propertyPath: sounds.Array.data[12].volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1336550789003482917, guid: 8f9ace057fd8dd74ba33c1fe6c20c89f, type: 3}
       propertyPath: m_Name
