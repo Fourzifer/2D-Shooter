@@ -39,8 +39,8 @@ public class EnemySpawn : MonoBehaviour
                     break;
                 case 5:
                     print("Level 4 spawn");
-                    enemyXPos = Random.Range(-50, 25);
-                    enemyYPos = Random.Range(-80, 30);
+                    enemyXPos = Random.Range(-25, 25);
+                    enemyYPos = Random.Range(-25, 25);
                     break;
                 default:
                     print("No enemy spawn range");
