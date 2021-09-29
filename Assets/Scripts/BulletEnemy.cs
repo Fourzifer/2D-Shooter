@@ -41,7 +41,7 @@ public class BulletEnemy : MonoBehaviour
 
         timeBtwShots = startTimeBtwShots;
         currentEnemies += 1;
-        print(currentEnemies);
+        print("Current enemies: " + currentEnemies);
     }
 
     // Update is called once per frame
