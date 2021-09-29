@@ -99,13 +99,11 @@ public class BulletEnemy : MonoBehaviour
     {
         sr.color = new Color(1f, 1f, 1f, .1f);
         Invoke("IncreaseOpacity", 0.1f);
-        Debug.Log("Decrease Opacity");
     }
 
     private void IncreaseOpacity()
     {
         sr.color = new Color(1f, 1f, 1f, 1f);
-        Debug.Log("Increase Opacity");
     }
 
     void OnCollisionEnter2D(Collision2D other)

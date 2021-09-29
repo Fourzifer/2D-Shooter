@@ -51,8 +51,10 @@ public class SceneTransition : MonoBehaviour
             default:
                 print("Unrecognised level");
                 break;
+
         }
 
+        BulletEnemy.currentEnemies = 0;
         print("Needed energy: " + (Energy.neededEnergy));
     }
 
