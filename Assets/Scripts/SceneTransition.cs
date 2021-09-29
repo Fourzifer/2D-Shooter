@@ -14,6 +14,8 @@ public class SceneTransition : MonoBehaviour
 
     public Animator transitionAnim;
 
+    private bool soundplay = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +62,13 @@ public class SceneTransition : MonoBehaviour
         if (Energy.currentEnergy >= Energy.neededEnergy)
         {
             m_SpriteRenderer.sprite = newSprite;
+
+            if (!soundplay)
+            {
+                FindObjectOfType<AudioManager>().Play("Laser4");
+                soundplay = true;
+            }
+            
         }
     }
 
