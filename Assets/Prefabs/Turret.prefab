@@ -122,9 +122,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1354441895532949534}
   - component: {fileID: 1354441895532949600}
-  - component: {fileID: 1354441895532949602}
   - component: {fileID: 1354441895532949601}
   - component: {fileID: 6422964489508440559}
+  - component: {fileID: 5917105100543927001}
   m_Layer: 8
   m_Name: Turret
   m_TagString: Enemy
@@ -200,22 +200,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &1354441895532949602
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354441895532949533}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!50 &1354441895532949601
 Rigidbody2D:
   serializedVersion: 4
@@ -258,6 +242,22 @@ MonoBehaviour:
   startTimeBtwShots: 1
   projectile: {fileID: 5383003598039579286, guid: 99a3a86fbd49b524f9bc0344f556dcf8, type: 3}
   shootingBullet: {fileID: 1354441894259363080}
+--- !u!70 &5917105100543927001
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354441895532949533}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.28728917, y: -0.005670657}
+  m_Size: {x: 1.0151314, y: 0.39140907}
+  m_Direction: 1
 --- !u!1 &3631319220638066744
 GameObject:
   m_ObjectHideFlags: 0
