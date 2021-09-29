@@ -3041,10 +3041,10 @@ MonoBehaviour:
   retreatDistance: 0
   shootingDistance: 50
   startTimeBtwShots: 1
-  projectile: {fileID: 5123687104342395395, guid: 1e5cec6128489db4a8548f2d2f132375, type: 3}
+  projectile: {fileID: 2084913481877063677, guid: a136a1f3e9214b848a2677c0821af76a, type: 3}
   shootingBullet1: {fileID: 565599094}
   shootingBullet2: {fileID: 660423467}
-  bulletForce: 25
+  bulletForce: 10
 --- !u!50 &1969184790 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 4088705668951905319, guid: 01bd149091cfb5e448d05584313b2f38, type: 3}
