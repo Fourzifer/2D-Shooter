@@ -16,6 +16,8 @@ public class InGameMenu : MonoBehaviour
 
     public void PressNo()
     {
+        player.isPaused = false;
+        Time.timeScale = 1;
         Destroy(CloneMenu);
     }
 }
