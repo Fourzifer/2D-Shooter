@@ -33,6 +33,7 @@ public class player : MonoBehaviour
     public Lives lifeManager;
 
     private bool invincible;
+    public static bool isPaused;
 
     private void Start()
     {
@@ -41,6 +42,7 @@ public class player : MonoBehaviour
 
         currentScene = SceneManager.GetActiveScene().buildIndex;
         invincible = false;
+        isPaused = false;
     }
 
     // Update is called once per frame
@@ -65,8 +67,10 @@ public class player : MonoBehaviour
             Invoke("ResetInvulnerability", 5);
         }
 
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel") && isPaused == false)
         {
+            isPaused = true;
+            Time.timeScale = 0;
             CloneMenu = Instantiate(Menu);
         }
     }
