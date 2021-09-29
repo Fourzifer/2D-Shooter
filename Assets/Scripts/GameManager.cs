@@ -33,9 +33,15 @@ public class GameManager : MonoBehaviour
         {
             yield return new WaitForSeconds(time);
             Energy.currentEnergy = 0;
-            _energyBar.SetEnergy(Energy.currentEnergy);
+
             playerShip.SetActive(true);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+            if (_energyBar == null)
+                yield return null;
+
+            _energyBar.SetEnergy(Energy.currentEnergy);
+
         }
     }
 }
