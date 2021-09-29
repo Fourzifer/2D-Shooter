@@ -7,15 +7,23 @@ public class Energy : MonoBehaviour
     public static int currentEnergy;
     public static int neededEnergy;
 
+
     private EnergyBar energyBar;
 
-    private int destroyDelay = 5;
+    [SerializeField]
+    public SpriteRenderer energySprite;
+    public ParticleSystem particles;
+
+    private int destroyDelay = 7;
 
     private void Start()
     {
         energyBar = GameObject.Find("EnergyBar").GetComponent<EnergyBar>();
         energyBar.SetMaxEnergy(neededEnergy);
         energyBar.SetEnergy(currentEnergy);
+
+        StartCoroutine(Fade(5));
+
         Destroy(gameObject, destroyDelay);
     }
 
@@ -28,5 +36,13 @@ public class Energy : MonoBehaviour
             energyBar.SetEnergy(currentEnergy);
             Destroy(gameObject);
         }
+
+    }
+
+    IEnumerator Fade(float time)
+    {
+        yield return new WaitForSeconds(time);
+        energySprite.color = new Color(1f, 1f, 1f, .5f);
+        particles.startColor = new Color(1f, 1f, 1f, .3f);
     }
 }
