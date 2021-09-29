@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ea9a61bb381ed448f04434c399ab39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 20
+  enemyHealth: 8
   sr: {fileID: 7209317257638654391}
   energyPrefab: {fileID: 8780744975267426317, guid: 9f98e9aef91dd3648850b57cb0abe082, type: 3}
   deathEffect: {fileID: 0}
