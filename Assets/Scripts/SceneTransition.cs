@@ -10,7 +10,7 @@ public class SceneTransition : MonoBehaviour
     public GameObject message;
     public GameObject cloneMessage;
 
-    private int currentScene;
+    [HideInInspector] public static int currentScene;
 
     public Animator transitionAnim;
 

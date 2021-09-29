@@ -11,7 +11,7 @@ public class EnemySpawn : MonoBehaviour
     private float enemySpawnTimer;
     public float maxSpawned;
 
-    private int currentScene;
+    //private int currentScene;
 
     // Start is called before the first frame update
     void Start()
@@ -25,9 +25,9 @@ public class EnemySpawn : MonoBehaviour
         bool enemySpawned = false;
         while (!enemySpawned)
         {
-            switch (currentScene)
+            switch (SceneTransition.currentScene)
             {
-                case 0:
+                case 2:
                     print("Level 1 Spawn");
                     enemyXPos = Random.Range(-50, 25);
                     enemyYPos = Random.Range(-25, 25);
@@ -43,7 +43,7 @@ public class EnemySpawn : MonoBehaviour
                     enemyYPos = Random.Range(-80, 30);
                     break;
                 default:
-                    print("No enemy spawn");
+                    print("No enemy spawn range");
                     break;
             }
 
