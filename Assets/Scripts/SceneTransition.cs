@@ -10,7 +10,7 @@ public class SceneTransition : MonoBehaviour
     public GameObject message;
     public GameObject cloneMessage;
 
-    private int currentScene;
+    [HideInInspector] public static int currentScene;
 
     public Animator transitionAnim;
 
@@ -23,7 +23,7 @@ public class SceneTransition : MonoBehaviour
 
         currentScene = SceneManager.GetActiveScene().buildIndex;
 
-        print("Level " + currentScene);
+        print("Scene " + currentScene);
 
         switch (currentScene)
         {
@@ -31,13 +31,13 @@ public class SceneTransition : MonoBehaviour
                 Energy.neededEnergy = 0;
                 break;
             case 1:
-                Energy.neededEnergy = 5;
+                Energy.neededEnergy = 0;
                 break;
             case 2:
-                Energy.neededEnergy = 8;
+                Energy.neededEnergy = 5;
                 break;
             case 3:
-                Energy.neededEnergy = 10;
+                Energy.neededEnergy = 8;
                 break;
             case 4:
                 Energy.neededEnergy = 10;
@@ -45,11 +45,16 @@ public class SceneTransition : MonoBehaviour
             case 5:
                 Energy.neededEnergy = 10;
                 break;
+            case 6:
+                Energy.neededEnergy = 10;
+                break;
             default:
                 print("Unrecognised level");
                 break;
+
         }
 
+        BulletEnemy.currentEnemies = 0;
         print("Needed energy: " + (Energy.neededEnergy));
     }
 

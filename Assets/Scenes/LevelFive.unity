@@ -1487,6 +1487,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 843164062, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
+      propertyPath: m_Color.b
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 843164062, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 843164062, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
+      propertyPath: m_Color.r
+      value: 0.92549026
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490854369895887251, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
+      propertyPath: sr
+      value: 
+      objectReference: {fileID: 758225870}
     - target: {fileID: 5490854369895887251, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
       propertyPath: cam
       value: 
@@ -1581,6 +1597,11 @@ Transform:
 --- !u!1 &758225861 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7847595520740231091, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
+  m_PrefabInstance: {fileID: 758225859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &758225870 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7847595520740231095, guid: e73ebbd0c670a7a4bb4cb75ea6dd49bf, type: 3}
   m_PrefabInstance: {fileID: 758225859}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &789615979
